@@ -125,3 +125,6 @@ class ExperimentalConfig(Config):
         self.msc3886_endpoint: Optional[str] = experimental.get(
             "msc3886_endpoint", None
         )
+
+        # MSC3391: Removing account data.
+        self.msc3391_enabled = experimental.get("msc3391_enabled", False)
