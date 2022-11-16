@@ -2305,10 +2305,14 @@ class RoomStore(RoomBackgroundUpdateStore, RoomWorkerStore):
             still contains events with partial state.
         """
         try:
-            await self.db_pool.runInteraction(
-                "clear_partial_state_room", self._clear_partial_state_room_txn, room_id
-            )
-            return True
+            async with self._un_partial_stated_rooms_stream_id_gen.get_next() as un_partial_state_room_stream_id:
+                await self.db_pool.runInteraction(
+                    "clear_partial_state_room",
+                    self._clear_partial_state_room_txn,
+                    room_id,
+                    un_partial_state_room_stream_id,
+                )
+                return True
         except self.db_pool.engine.module.IntegrityError as e:
             # Assume that any `IntegrityError`s are due to partial state events.
             logger.info(
@@ -2319,7 +2323,10 @@ class RoomStore(RoomBackgroundUpdateStore, RoomWorkerStore):
             return False
 
     def _clear_partial_state_room_txn(
-        self, txn: LoggingTransaction, room_id: str
+        self,
+        txn: LoggingTransaction,
+        room_id: str,
+        un_partial_state_room_stream_id: int,
     ) -> None:
         DatabasePool.simple_delete_txn(
             txn,
@@ -2334,6 +2341,16 @@ class RoomStore(RoomBackgroundUpdateStore, RoomWorkerStore):
         self._invalidate_cache_and_stream(txn, self.is_partial_state_room, (room_id,))
         self._invalidate_cache_and_stream(
             txn, self.get_partial_state_servers_at_join, (room_id,)
+        )
+
+        DatabasePool.simple_insert_txn(
+            txn,
+            "un_partial_state_room_stream",
+            {
+                "stream_id": un_partial_state_room_stream_id,
+                "instance_name": self._instance_name,
+                "room_id": room_id,
+            },
         )
 
         # We now delete anything from `device_lists_remote_pending` with a
