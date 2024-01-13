@@ -29,6 +29,7 @@
         <link rel="stylesheet" href="docs/website_files/table-of-contents.css">
         <link rel="stylesheet" href="docs/website_files/remove-nav-buttons.css">
         <link rel="stylesheet" href="docs/website_files/indent-section-headers.css">
+        <link rel="stylesheet" href="docs/website_files/version-picker.css">
     </head>
     <body>
         <!-- Provide site root to javascript -->
@@ -77,7 +78,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Introduction</li><li class="chapter-item expanded "><a href="welcome_and_overview.html">Welcome and Overview</a></li><li class="chapter-item expanded affix "><li class="part-title">Setup</li><li class="chapter-item expanded "><a href="setup/installation.html">Installation</a></li><li class="chapter-item expanded "><a href="postgres.html">Using Postgres</a></li><li class="chapter-item expanded "><a href="reverse_proxy.html">Configuring a Reverse Proxy</a></li><li class="chapter-item expanded "><a href="setup/forward_proxy.html">Configuring a Forward/Outbound Proxy</a></li><li class="chapter-item expanded "><a href="turn-howto.html">Configuring a Turn Server</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="setup/turn/coturn.html">coturn TURN server</a></li><li class="chapter-item expanded "><a href="setup/turn/eturnal.html">eturnal TURN server</a></li></ol></li><li class="chapter-item expanded "><a href="delegate.html">Delegation</a></li><li class="chapter-item expanded affix "><li class="part-title">Upgrading</li><li class="chapter-item expanded "><a href="upgrade.html">Upgrading between Synapse Versions</a></li><li class="chapter-item expanded affix "><li class="part-title">Usage</li><li class="chapter-item expanded "><a href="federate.html">Federation</a></li><li class="chapter-item expanded "><a href="usage/configuration/index.html">Configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="usage/configuration/config_documentation.html">Configuration Manual</a></li><li class="chapter-item expanded "><a href="usage/configuration/homeserver_sample_config.html">Homeserver Sample Config File</a></li><li class="chapter-item expanded "><a href="usage/configuration/logging_sample_config.html">Logging Sample Config File</a></li><li class="chapter-item expanded "><a href="structured_logging.html">Structured Logging</a></li><li class="chapter-item expanded "><a href="templates.html">Templates</a></li><li class="chapter-item expanded "><a href="usage/configuration/user_authentication/index.html">User Authentication</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="usage/configuration/user_authentication/single_sign_on/index.html">Single-Sign On</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="openid.html">OpenID Connect</a></li><li class="chapter-item expanded "><a href="usage/configuration/user_authentication/single_sign_on/saml.html">SAML</a></li><li class="chapter-item expanded "><a href="usage/configuration/user_authentication/single_sign_on/cas.html">CAS</a></li><li class="chapter-item expanded "><a href="sso_mapping_providers.html">SSO Mapping Providers</a></li></ol></li><li class="chapter-item expanded "><a href="password_auth_providers.html">Password Auth Providers</a></li><li class="chapter-item expanded "><a href="jwt.html">JSON Web Tokens</a></li><li class="chapter-item expanded "><a href="usage/configuration/user_authentication/refresh_tokens.html">Refresh Tokens</a></li></ol></li><li class="chapter-item expanded "><a href="CAPTCHA_SETUP.html">Registration Captcha</a></li><li class="chapter-item expanded "><a href="application_services.html">Application Services</a></li><li class="chapter-item expanded "><a href="server_notices.html">Server Notices</a></li><li class="chapter-item expanded "><a href="consent_tracking.html">Consent Tracking</a></li><li class="chapter-item expanded "><a href="user_directory.html">User Directory</a></li><li class="chapter-item expanded "><a href="message_retention_policies.html">Message Retention Policies</a></li><li class="chapter-item expanded "><a href="modules/index.html">Pluggable Modules</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="modules/writing_a_module.html">Writing a module</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="modules/spam_checker_callbacks.html">Spam checker callbacks</a></li><li class="chapter-item expanded "><a href="modules/third_party_rules_callbacks.html">Third-party rules callbacks</a></li><li class="chapter-item expanded "><a href="modules/presence_router_callbacks.html">Presence router callbacks</a></li><li class="chapter-item expanded "><a href="modules/account_validity_callbacks.html">Account validity callbacks</a></li><li class="chapter-item expanded "><a href="modules/password_auth_provider_callbacks.html">Password auth provider callbacks</a></li><li class="chapter-item expanded "><a href="modules/background_update_controller_callbacks.html">Background update controller callbacks</a></li><li class="chapter-item expanded "><a href="modules/account_data_callbacks.html">Account data callbacks</a></li><li class="chapter-item expanded "><a href="modules/porting_legacy_module.html">Porting a legacy module to the new interface</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="workers.html">Workers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="synctl_workers.html">Using synctl with Workers</a></li><li class="chapter-item expanded "><a href="systemd-with-workers/index.html">Systemd</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="usage/administration/index.html">Administration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="usage/administration/admin_api/index.html">Admin API</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="admin_api/account_validity.html">Account Validity</a></li><li class="chapter-item expanded "><a href="usage/administration/admin_api/background_updates.html">Background Updates</a></li><li class="chapter-item expanded "><a href="admin_api/event_reports.html">Event Reports</a></li><li class="chapter-item expanded "><a href="admin_api/experimental_features.html">Experimental Features</a></li><li class="chapter-item expanded "><a href="admin_api/media_admin_api.html">Media</a></li><li class="chapter-item expanded "><a href="admin_api/purge_history_api.html">Purge History</a></li><li class="chapter-item expanded "><a href="admin_api/register_api.html">Register Users</a></li><li class="chapter-item expanded "><a href="usage/administration/admin_api/registration_tokens.html">Registration Tokens</a></li><li class="chapter-item expanded "><a href="admin_api/room_membership.html">Manipulate Room Membership</a></li><li class="chapter-item expanded "><a href="admin_api/rooms.html">Rooms</a></li><li class="chapter-item expanded "><a href="admin_api/server_notices.html">Server Notices</a></li><li class="chapter-item expanded "><a href="admin_api/statistics.html">Statistics</a></li><li class="chapter-item expanded "><a href="admin_api/user_admin_api.html">Users</a></li><li class="chapter-item expanded "><a href="admin_api/version_api.html">Server Version</a></li><li class="chapter-item expanded "><a href="usage/administration/admin_api/federation.html">Federation</a></li></ol></li><li class="chapter-item expanded "><a href="manhole.html">Manhole</a></li><li class="chapter-item expanded "><a href="metrics-howto.html">Monitoring</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="usage/administration/monitoring/reporting_homeserver_usage_statistics.html">Reporting Homeserver Usage Statistics</a></li></ol></li><li class="chapter-item expanded "><a href="usage/administration/monthly_active_users.html">Monthly Active Users</a></li><li class="chapter-item expanded "><a href="usage/administration/understanding_synapse_through_grafana_graphs.html">Understanding Synapse Through Grafana Graphs</a></li><li class="chapter-item expanded "><a href="usage/administration/useful_sql_for_admins.html">Useful SQL for Admins</a></li><li class="chapter-item expanded "><a href="usage/administration/database_maintenance_tools.html">Database Maintenance Tools</a></li><li class="chapter-item expanded "><a href="usage/administration/state_groups.html">State Groups</a></li><li class="chapter-item expanded "><a href="usage/administration/request_log.html">Request log format</a></li><li class="chapter-item expanded "><a href="usage/administration/admin_faq.html">Admin FAQ</a></li><li class="chapter-item expanded "><div>Scripts</div></li></ol></li><li class="chapter-item expanded "><li class="part-title">Development</li><li class="chapter-item expanded "><a href="development/contributing_guide.html">Contributing Guide</a></li><li class="chapter-item expanded "><a href="code_style.html">Code Style</a></li><li class="chapter-item expanded "><a href="development/reviews.html">Reviewing Code</a></li><li class="chapter-item expanded "><a href="development/releases.html">Release Cycle</a></li><li class="chapter-item expanded "><a href="development/git.html">Git Usage</a></li><li class="chapter-item expanded "><div>Testing</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="development/demo.html">Demo scripts</a></li></ol></li><li class="chapter-item expanded "><a href="opentracing.html">OpenTracing</a></li><li class="chapter-item expanded "><a href="development/database_schema.html">Database Schemas</a></li><li class="chapter-item expanded "><a href="development/experimental_features.html">Experimental features</a></li><li class="chapter-item expanded "><a href="development/dependencies.html">Dependency management</a></li><li class="chapter-item expanded "><div>Synapse Architecture</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="development/synapse_architecture/cancellation.html">Cancellation</a></li><li class="chapter-item expanded "><a href="log_contexts.html">Log Contexts</a></li><li class="chapter-item expanded "><a href="replication.html">Replication</a></li><li class="chapter-item expanded "><a href="tcp_replication.html">TCP Replication</a></li><li class="chapter-item expanded "><a href="development/synapse_architecture/faster_joins.html">Faster remote joins</a></li></ol></li><li class="chapter-item expanded "><a href="development/internal_documentation/index.html">Internal Documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><div>Single Sign-On</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="development/saml.html">SAML</a></li><li class="chapter-item expanded "><a href="development/cas.html">CAS</a></li></ol></li><li class="chapter-item expanded "><a href="development/room-dag-concepts.html">Room DAG concepts</a></li><li class="chapter-item expanded "><div>State Resolution</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="auth_chain_difference_algorithm.html">The Auth Chain Difference Algorithm</a></li></ol></li><li class="chapter-item expanded "><a href="media_repository.html">Media Repository</a></li><li class="chapter-item expanded "><a href="room_and_user_statistics.html">Room and User Statistics</a></li></ol></li><li class="chapter-item expanded "><div>Scripts</div></li><li class="chapter-item expanded affix "><li class="part-title">Other</li><li class="chapter-item expanded "><a href="deprecation_policy.html">Dependency Deprecation Policy</a></li><li class="chapter-item expanded "><a href="other/running_synapse_on_single_board_computers.html">Running Synapse on a Single-Board Computer</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Introduction</li><li class="chapter-item expanded "><a href="welcome_and_overview.html">Welcome and Overview</a></li><li class="chapter-item expanded affix "><li class="part-title">Setup</li><li class="chapter-item expanded "><a href="setup/installation.html">Installation</a></li><li class="chapter-item expanded "><a href="postgres.html">Using Postgres</a></li><li class="chapter-item expanded "><a href="reverse_proxy.html">Configuring a Reverse Proxy</a></li><li class="chapter-item expanded "><a href="setup/forward_proxy.html">Configuring a Forward/Outbound Proxy</a></li><li class="chapter-item expanded "><a href="turn-howto.html">Configuring a Turn Server</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="setup/turn/coturn.html">coturn TURN server</a></li><li class="chapter-item expanded "><a href="setup/turn/eturnal.html">eturnal TURN server</a></li></ol></li><li class="chapter-item expanded "><a href="delegate.html">Delegation</a></li><li class="chapter-item expanded affix "><li class="part-title">Upgrading</li><li class="chapter-item expanded "><a href="upgrade.html">Upgrading between Synapse Versions</a></li><li class="chapter-item expanded affix "><li class="part-title">Usage</li><li class="chapter-item expanded "><a href="federate.html">Federation</a></li><li class="chapter-item expanded "><a href="usage/configuration/index.html">Configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="usage/configuration/config_documentation.html">Configuration Manual</a></li><li class="chapter-item expanded "><a href="usage/configuration/homeserver_sample_config.html">Homeserver Sample Config File</a></li><li class="chapter-item expanded "><a href="usage/configuration/logging_sample_config.html">Logging Sample Config File</a></li><li class="chapter-item expanded "><a href="structured_logging.html">Structured Logging</a></li><li class="chapter-item expanded "><a href="templates.html">Templates</a></li><li class="chapter-item expanded "><a href="usage/configuration/user_authentication/index.html">User Authentication</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="usage/configuration/user_authentication/single_sign_on/index.html">Single-Sign On</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="openid.html">OpenID Connect</a></li><li class="chapter-item expanded "><a href="usage/configuration/user_authentication/single_sign_on/saml.html">SAML</a></li><li class="chapter-item expanded "><a href="usage/configuration/user_authentication/single_sign_on/cas.html">CAS</a></li><li class="chapter-item expanded "><a href="sso_mapping_providers.html">SSO Mapping Providers</a></li></ol></li><li class="chapter-item expanded "><a href="password_auth_providers.html">Password Auth Providers</a></li><li class="chapter-item expanded "><a href="jwt.html">JSON Web Tokens</a></li><li class="chapter-item expanded "><a href="usage/configuration/user_authentication/refresh_tokens.html">Refresh Tokens</a></li></ol></li><li class="chapter-item expanded "><a href="CAPTCHA_SETUP.html">Registration Captcha</a></li><li class="chapter-item expanded "><a href="application_services.html">Application Services</a></li><li class="chapter-item expanded "><a href="server_notices.html">Server Notices</a></li><li class="chapter-item expanded "><a href="consent_tracking.html">Consent Tracking</a></li><li class="chapter-item expanded "><a href="user_directory.html">User Directory</a></li><li class="chapter-item expanded "><a href="message_retention_policies.html">Message Retention Policies</a></li><li class="chapter-item expanded "><a href="modules/index.html">Pluggable Modules</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="modules/writing_a_module.html">Writing a module</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="modules/spam_checker_callbacks.html">Spam checker callbacks</a></li><li class="chapter-item expanded "><a href="modules/third_party_rules_callbacks.html">Third-party rules callbacks</a></li><li class="chapter-item expanded "><a href="modules/presence_router_callbacks.html">Presence router callbacks</a></li><li class="chapter-item expanded "><a href="modules/account_validity_callbacks.html">Account validity callbacks</a></li><li class="chapter-item expanded "><a href="modules/password_auth_provider_callbacks.html">Password auth provider callbacks</a></li><li class="chapter-item expanded "><a href="modules/background_update_controller_callbacks.html">Background update controller callbacks</a></li><li class="chapter-item expanded "><a href="modules/account_data_callbacks.html">Account data callbacks</a></li><li class="chapter-item expanded "><a href="modules/add_extra_fields_to_client_events_unsigned.html">Add extra fields to client events unsigned section callbacks</a></li><li class="chapter-item expanded "><a href="modules/porting_legacy_module.html">Porting a legacy module to the new interface</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="workers.html">Workers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="synctl_workers.html">Using synctl with Workers</a></li><li class="chapter-item expanded "><a href="systemd-with-workers/index.html">Systemd</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="usage/administration/index.html">Administration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="usage/administration/admin_api/index.html">Admin API</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="admin_api/account_validity.html">Account Validity</a></li><li class="chapter-item expanded "><a href="usage/administration/admin_api/background_updates.html">Background Updates</a></li><li class="chapter-item expanded "><a href="admin_api/event_reports.html">Event Reports</a></li><li class="chapter-item expanded "><a href="admin_api/experimental_features.html">Experimental Features</a></li><li class="chapter-item expanded "><a href="admin_api/media_admin_api.html">Media</a></li><li class="chapter-item expanded "><a href="admin_api/purge_history_api.html">Purge History</a></li><li class="chapter-item expanded "><a href="admin_api/register_api.html">Register Users</a></li><li class="chapter-item expanded "><a href="usage/administration/admin_api/registration_tokens.html">Registration Tokens</a></li><li class="chapter-item expanded "><a href="admin_api/room_membership.html">Manipulate Room Membership</a></li><li class="chapter-item expanded "><a href="admin_api/rooms.html">Rooms</a></li><li class="chapter-item expanded "><a href="admin_api/server_notices.html">Server Notices</a></li><li class="chapter-item expanded "><a href="admin_api/statistics.html">Statistics</a></li><li class="chapter-item expanded "><a href="admin_api/user_admin_api.html">Users</a></li><li class="chapter-item expanded "><a href="admin_api/version_api.html">Server Version</a></li><li class="chapter-item expanded "><a href="usage/administration/admin_api/federation.html">Federation</a></li></ol></li><li class="chapter-item expanded "><a href="manhole.html">Manhole</a></li><li class="chapter-item expanded "><a href="metrics-howto.html">Monitoring</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="usage/administration/monitoring/reporting_homeserver_usage_statistics.html">Reporting Homeserver Usage Statistics</a></li></ol></li><li class="chapter-item expanded "><a href="usage/administration/monthly_active_users.html">Monthly Active Users</a></li><li class="chapter-item expanded "><a href="usage/administration/understanding_synapse_through_grafana_graphs.html">Understanding Synapse Through Grafana Graphs</a></li><li class="chapter-item expanded "><a href="usage/administration/useful_sql_for_admins.html">Useful SQL for Admins</a></li><li class="chapter-item expanded "><a href="usage/administration/database_maintenance_tools.html">Database Maintenance Tools</a></li><li class="chapter-item expanded "><a href="usage/administration/state_groups.html">State Groups</a></li><li class="chapter-item expanded "><a href="usage/administration/request_log.html">Request log format</a></li><li class="chapter-item expanded "><a href="usage/administration/admin_faq.html">Admin FAQ</a></li><li class="chapter-item expanded "><div>Scripts</div></li></ol></li><li class="chapter-item expanded "><li class="part-title">Development</li><li class="chapter-item expanded "><a href="development/contributing_guide.html">Contributing Guide</a></li><li class="chapter-item expanded "><a href="code_style.html">Code Style</a></li><li class="chapter-item expanded "><a href="development/reviews.html">Reviewing Code</a></li><li class="chapter-item expanded "><a href="development/releases.html">Release Cycle</a></li><li class="chapter-item expanded "><a href="development/git.html">Git Usage</a></li><li class="chapter-item expanded "><div>Testing</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="development/demo.html">Demo scripts</a></li></ol></li><li class="chapter-item expanded "><a href="opentracing.html">OpenTracing</a></li><li class="chapter-item expanded "><a href="development/database_schema.html">Database Schemas</a></li><li class="chapter-item expanded "><a href="development/experimental_features.html">Experimental features</a></li><li class="chapter-item expanded "><a href="development/dependencies.html">Dependency management</a></li><li class="chapter-item expanded "><div>Synapse Architecture</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="development/synapse_architecture/cancellation.html">Cancellation</a></li><li class="chapter-item expanded "><a href="log_contexts.html">Log Contexts</a></li><li class="chapter-item expanded "><a href="replication.html">Replication</a></li><li class="chapter-item expanded "><a href="development/synapse_architecture/streams.html">Streams</a></li><li class="chapter-item expanded "><a href="tcp_replication.html">TCP Replication</a></li><li class="chapter-item expanded "><a href="development/synapse_architecture/faster_joins.html">Faster remote joins</a></li></ol></li><li class="chapter-item expanded "><a href="development/internal_documentation/index.html">Internal Documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><div>Single Sign-On</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="development/saml.html">SAML</a></li><li class="chapter-item expanded "><a href="development/cas.html">CAS</a></li></ol></li><li class="chapter-item expanded "><a href="development/room-dag-concepts.html">Room DAG concepts</a></li><li class="chapter-item expanded "><div>State Resolution</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="auth_chain_difference_algorithm.html">The Auth Chain Difference Algorithm</a></li></ol></li><li class="chapter-item expanded "><a href="media_repository.html">Media Repository</a></li><li class="chapter-item expanded "><a href="room_and_user_statistics.html">Room and User Statistics</a></li></ol></li><li class="chapter-item expanded "><div>Scripts</div></li><li class="chapter-item expanded affix "><li class="part-title">Other</li><li class="chapter-item expanded "><a href="deprecation_policy.html">Dependency Deprecation Policy</a></li><li class="chapter-item expanded "><a href="other/running_synapse_on_single_board_computers.html">Running Synapse on a Single-Board Computer</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -104,6 +105,18 @@
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
+                        <div class="version-picker">
+                            <div class="dropdown">
+                                <div class="select">
+                                    <span></span>
+                                    <i class="fa fa-chevron-down"></i>
+                                </div>
+                                <input type="hidden" name="version">
+                                <ul class="dropdown-menu">
+                                    <!-- Versions will be added dynamically in version-picker.js -->
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
                     <h1 class="menu-title">Synapse</h1>
@@ -257,7 +270,7 @@ on hub.docker.com.</p>
 Dockerfile to automate a synapse server in a single Docker image, at
 <a href="https://hub.docker.com/r/avhost/docker-matrix/tags/">https://hub.docker.com/r/avhost/docker-matrix/tags/</a></p>
 <p>Slavi Pantaleev has created an Ansible playbook,
-which installs the offical Docker image of Matrix Synapse
+which installs the official Docker image of Matrix Synapse
 along with many other Matrix-related services (Postgres database, Element, coturn,
 ma1sd, SSL support, etc.).
 For more details, see
@@ -296,7 +309,7 @@ the Debian repositories.
 For <code>bookworm</code> and <code>sid</code>, it can be installed simply with:</p>
 <pre><code class="language-sh">sudo apt install matrix-synapse
 </code></pre>
-<p>Synapse is also avaliable in <code>bullseye-backports</code>.  Please
+<p>Synapse is also available in <code>bullseye-backports</code>.  Please
 see the <a href="https://backports.debian.org/Instructions/">Debian documentation</a>
 for information on how to use backports.</p>
 <p><code>matrix-synapse</code> is no longer maintained for <code>buster</code> and older.</p>
@@ -320,8 +333,8 @@ The latest version of Synapse can be installed from <a href="setup/installation.
 <p>Unofficial package are built for SLES 15 in the openSUSE:Backports:SLE-15 repository at
 <a href="https://download.opensuse.org/repositories/openSUSE:/Backports:/SLE-15/standard/">https://download.opensuse.org/repositories/openSUSE:/Backports:/SLE-15/standard/</a></p>
 <h4 id="archlinux"><a class="header" href="#archlinux">ArchLinux</a></h4>
-<p>The quickest way to get up and running with ArchLinux is probably with the community package
-<a href="https://archlinux.org/packages/community/x86_64/matrix-synapse/">https://archlinux.org/packages/community/x86_64/matrix-synapse/</a>, which should pull in most of
+<p>The quickest way to get up and running with ArchLinux is probably with the package provided by ArchLinux
+<a href="https://archlinux.org/packages/extra/x86_64/matrix-synapse/">https://archlinux.org/packages/extra/x86_64/matrix-synapse/</a>, which should pull in most of
 the necessary dependencies.</p>
 <p>pip may be outdated (6.0.7-1 and needs to be upgraded to 6.0.8-1 ):</p>
 <pre><code class="language-sh">sudo pip install --upgrade pip
@@ -332,6 +345,10 @@ compile it under the right architecture. (This should not be needed if
 installing under virtualenv):</p>
 <pre><code class="language-sh">sudo pip uninstall py-bcrypt
 sudo pip install py-bcrypt
+</code></pre>
+<h4 id="alpine-linux"><a class="header" href="#alpine-linux">Alpine Linux</a></h4>
+<p>6543 maintains <a href="https://pkgs.alpinelinux.org/packages?name=synapse&amp;branch=edge">Synapse packages for Alpine Linux</a> in the community repository. Install with:</p>
+<pre><code class="language-sh">sudo apk add synapse
 </code></pre>
 <h4 id="void-linux"><a class="header" href="#void-linux">Void Linux</a></h4>
 <p>Synapse can be found in the void repositories as
@@ -711,7 +728,7 @@ section in your config file to match the following lines:</p>
   args:
     user: &lt;user&gt;
     password: &lt;pass&gt;
-    database: &lt;db&gt;
+    dbname: &lt;db&gt;
     host: &lt;host&gt;
     cp_min: 5
     cp_max: 10
@@ -850,7 +867,7 @@ of <code>COLLATE</code> and <code>CTYPE</code> unless the config flag <code>allo
 <code>database</code> section of the config, is set to true. Using different locales can cause issues if the locale library is updated from
 underneath the database, or if a different version of the locale is used on any
 replicas.</p>
-<p>If you have a databse with an unsafe locale, the safest way to fix the issue is to dump the database and recreate it with
+<p>If you have a database with an unsafe locale, the safest way to fix the issue is to dump the database and recreate it with
 the correct locale parameter (as shown above). It is also possible to change the
 parameters on a live database and run a <code>REINDEX</code> on the entire database,
 however extreme care must be taken to avoid database corruption.</p>
@@ -942,7 +959,7 @@ reverse proxy is using.</p>
 }
 
 example.com:8448 {
-  reverse_proxy localhost:8008
+  reverse_proxy /_matrix/* localhost:8008
 }
 </code></pre>
 <p><a href="delegate.html">Delegation</a> example:</p>
@@ -1013,6 +1030,10 @@ frontend matrix-federation
 
 backend matrix
   server matrix 127.0.0.1:8008
+</code></pre>
+<p>Example configuration, if using a UNIX socket. The configuration lines regarding the frontends do not need to be modified.</p>
+<pre><code>backend matrix
+  server matrix unix@/run/synapse/main_public.sock
 </code></pre>
 <p><a href="delegate.html">Delegation</a> example:</p>
 <pre><code>frontend https
@@ -1175,7 +1196,7 @@ TURN server.</p>
 </ul>
 <h2 id="requirements"><a class="header" href="#requirements">Requirements</a></h2>
 <p>For TURN relaying to work, the TURN service must be hosted on a server/endpoint with a public IP.</p>
-<p>Hosting TURN behind NAT requires port forwaring and for the NAT gateway to have a public IP.
+<p>Hosting TURN behind NAT requires port forwarding and for the NAT gateway to have a public IP.
 However, even with appropriate configuration, NAT is known to cause issues and to often not work.</p>
 <p>Afterwards, the homeserver needs some further configuration.</p>
 <h2 id="synapse-setup"><a class="header" href="#synapse-setup">Synapse setup</a></h2>
@@ -1779,6 +1800,48 @@ dpkg -i matrix-synapse-py3_1.3.0+stretch1_amd64.deb
 </code></pre>
 </li>
 </ul>
+<p>Generally Synapse database schemas are compatible across multiple versions, once
+a version of Synapse is deployed you may not be able to rollback automatically.
+The following table gives the version ranges and the earliest version they can
+be rolled back to. E.g. Synapse versions v1.58.0 through v1.61.1 can be rolled
+back safely to v1.57.0, but starting with v1.62.0 it is only safe to rollback to
+v1.61.0.</p>
+<table><thead><tr><th>Versions</th><th>Compatible version</th></tr></thead><tbody>
+<tr><td>v1.0.0 – v1.2.1</td><td>v1.0.0</td></tr>
+<tr><td>v1.3.0 – v1.8.0</td><td>v1.3.0</td></tr>
+<tr><td>v1.9.0 – v1.12.4</td><td>v1.9.0</td></tr>
+<tr><td>v1.13.0 – v1.25.0</td><td>v1.13.0</td></tr>
+<tr><td>v1.26.0 – v1.44.0</td><td>v1.26.0</td></tr>
+<tr><td>v1.45.0 – v1.47.1</td><td>v1.38.0</td></tr>
+<tr><td>v1.48.0 – v1.51.0</td><td>v1.39.0</td></tr>
+<tr><td>v1.52.0 – v1.57.1</td><td>v1.49.0</td></tr>
+<tr><td>v1.58.0 – v1.61.1</td><td>v1.57.0</td></tr>
+<tr><td>v1.62.0 – v1.63.1</td><td>v1.61.0</td></tr>
+<tr><td>v1.64.0 – v1.69.0</td><td>v1.62.0</td></tr>
+<tr><td>v1.70.0 – v1.71.0</td><td>v1.68.0</td></tr>
+</tbody></table>
+<h1 id="upgrading-to-v1930"><a class="header" href="#upgrading-to-v1930">Upgrading to v1.93.0</a></h1>
+<h2 id="minimum-supported-rust-version"><a class="header" href="#minimum-supported-rust-version">Minimum supported Rust version</a></h2>
+<p>The minimum supported Rust version has been increased from v1.60.0 to v1.61.0.
+Users building from source will need to ensure their <code>rustc</code> version is up to
+date.</p>
+<h1 id="upgrading-to-v1900"><a class="header" href="#upgrading-to-v1900">Upgrading to v1.90.0</a></h1>
+<h2 id="app-service-query-parameter-authorization-is-now-a-configuration-option"><a class="header" href="#app-service-query-parameter-authorization-is-now-a-configuration-option">App service query parameter authorization is now a configuration option</a></h2>
+<p>Synapse v1.81.0 deprecated application service authorization via query parameters as this is
+considered insecure - and from Synapse v1.71.0 forwards the application service token has also been sent via 
+<a href="https://spec.matrix.org/v1.6/application-service-api/#authorization">the <code>Authorization</code> header</a>], making the insecure
+query parameter authorization redundant. Since removing the ability to continue to use query parameters could break 
+backwards compatibility it has now been put behind a configuration option, <code>use_appservice_legacy_authorization</code>.<br />
+This option defaults to false, but can be activated by adding </p>
+<pre><code class="language-yaml">use_appservice_legacy_authorization: true 
+</code></pre>
+<p>to your configuration.</p>
+<h1 id="upgrading-to-v1890"><a class="header" href="#upgrading-to-v1890">Upgrading to v1.89.0</a></h1>
+<h2 id="removal-of-unspecced-user-property-for-register"><a class="header" href="#removal-of-unspecced-user-property-for-register">Removal of unspecced <code>user</code> property for <code>/register</code></a></h2>
+<p>Application services can no longer call <code>/register</code> with a <code>user</code> property to create new users.
+The standard <code>username</code> property should be used instead. See the
+<a href="https://spec.matrix.org/v1.7/application-service-api/#server-admin-style-permissions">Application Service specification</a>
+for more information.</p>
 <h1 id="upgrading-to-v1880"><a class="header" href="#upgrading-to-v1880">Upgrading to v1.88.0</a></h1>
 <h2 id="minimum-supported-python-version"><a class="header" href="#minimum-supported-python-version">Minimum supported Python version</a></h2>
 <p>The minimum supported Python version has been increased from v3.7 to v3.8.
@@ -1798,7 +1861,7 @@ are being removed in this release of Synapse:</p>
 administrators of single-process (monolith) installations don't need to do anything.</p>
 <p>For an illustrative example, please see <a href="upgrade.html#upgrading-to-v1840">Upgrading to v1.84.0</a> below.</p>
 <h1 id="upgrading-to-v1860"><a class="header" href="#upgrading-to-v1860">Upgrading to v1.86.0</a></h1>
-<h2 id="minimum-supported-rust-version"><a class="header" href="#minimum-supported-rust-version">Minimum supported Rust version</a></h2>
+<h2 id="minimum-supported-rust-version-1"><a class="header" href="#minimum-supported-rust-version-1">Minimum supported Rust version</a></h2>
 <p>The minimum supported Rust version has been increased from v1.58.1 to v1.60.0.
 Users building from source will need to ensure their <code>rustc</code> version is up to
 date.</p>
@@ -2651,7 +2714,7 @@ Instructions for doing so are provided
 <p>In line with our <a href="deprecation_policy.html">deprecation policy</a>,
 we've dropped support for Python 3.5 and PostgreSQL 9.5, as they are no
 longer supported upstream.</p>
-<p>This release of Synapse requires Python 3.6+ and PostgresSQL 9.6+ or
+<p>This release of Synapse requires Python 3.6+ and PostgreSQL 9.6+ or
 SQLite 3.22+.</p>
 <h2 id="removal-of-old-list-accounts-admin-api"><a class="header" href="#removal-of-old-list-accounts-admin-api">Removal of old List Accounts Admin API</a></h2>
 <p>The deprecated v1 &quot;list accounts&quot; admin API
@@ -3432,7 +3495,7 @@ in the config and update your dependencies dependencies. See README.rst
 for details.</p>
 <h1 id="upgrading-to-v0110"><a class="header" href="#upgrading-to-v0110">Upgrading to v0.11.0</a></h1>
 <p>This release includes the option to send anonymous usage stats to
-matrix.org, and requires that administrators explictly opt in or out by
+matrix.org, and requires that administrators explicitly opt in or out by
 setting the <code>report_stats</code> option to either <code>true</code> or <code>false</code>.</p>
 <p>We would really appreciate it if you could help our project out by
 reporting anonymized usage statistics from your homeserver. Only very
@@ -3512,7 +3575,7 @@ latest module, please run:</p>
 <pre><code>$ pip uninstall syweb
 </code></pre>
 <h1 id="upgrading-to-v050"><a class="header" href="#upgrading-to-v050">Upgrading to v0.5.0</a></h1>
-<p>The webclient has been split out into a seperate repository/pacakage in
+<p>The webclient has been split out into a separate repository/package in
 this release. Before you restart your homeserver you will need to pull
 in the webclient package by running:</p>
 <pre><code>python setup.py develop --user
@@ -3689,11 +3752,23 @@ followed by a letter. Letters have the following meanings:</p>
 messages from the database after 5 minutes, rather than 5 months.</p>
 <p>In addition, configuration options referring to size use the following suffixes:</p>
 <ul>
-<li><code>M</code> = MiB, or 1,048,576 bytes</li>
 <li><code>K</code> = KiB, or 1024 bytes</li>
+<li><code>M</code> = MiB, or 1,048,576 bytes</li>
+<li><code>G</code> = GiB, or 1,073,741,824 bytes</li>
+<li><code>T</code> = TiB, or 1,099,511,627,776 bytes</li>
 </ul>
 <p>For example, setting <code>max_avatar_size: 10M</code> means that Synapse will not accept files larger than 10,485,760 bytes
 for a user avatar.</p>
+<h2 id="config-validation"><a class="header" href="#config-validation">Config Validation</a></h2>
+<p>The configuration file can be validated with the following command:</p>
+<pre><code class="language-bash">python -m synapse.config read &lt;config key to print&gt; -c &lt;path to config&gt;
+</code></pre>
+<p>To validate the entire file, omit <code>read &lt;config key to print&gt;</code>:</p>
+<pre><code class="language-bash">python -m synapse.config -c &lt;path to config&gt;
+</code></pre>
+<p>To see how to set other options, check the help reference:</p>
+<pre><code class="language-bash">python -m synapse.config --help
+</code></pre>
 <h3 id="yaml"><a class="header" href="#yaml">YAML</a></h3>
 <p>The configuration file is a <a href="https://yaml.org/">YAML</a> file, which means that certain syntax rules
 apply if you want your config file to be read properly. A few helpful things to know:</p>
@@ -3844,6 +3919,10 @@ This option replaces the previous top-level 'use_presence' option.</p>
 <pre><code class="language-yaml">presence:
   enabled: false
 </code></pre>
+<p><code>enabled</code> can also be set to a special value of &quot;untracked&quot; which ignores updates
+received via clients and federation, while still accepting updates from the
+<a href="usage/configuration/../../modules/index.html">module API</a>.</p>
+<p><em>The &quot;untracked&quot; option was added in Synapse 1.96.0.</em></p>
 <hr />
 <h3 id="require_auth_for_profile_requests"><a class="header" href="#require_auth_for_profile_requests"><code>require_auth_for_profile_requests</code></a></h3>
 <p>Whether to require authentication to retrieve profile data (avatars, display names) of other
@@ -4043,6 +4122,23 @@ on this port. Sub-options for each resource are:</p>
 additional endpoints which should be loaded via dynamic modules.</p>
 </li>
 </ul>
+<p>Unix socket support (<em>Added in Synapse 1.89.0</em>):</p>
+<ul>
+<li><code>path</code>: A path and filename for a Unix socket. Make sure it is located in a
+directory with read and write permissions, and that it already exists (the directory
+will not be created). Defaults to <code>None</code>.
+<ul>
+<li><strong>Note</strong>: The use of both <code>path</code> and <code>port</code> options for the same <code>listener</code> is not
+compatible.</li>
+<li>The <code>x_forwarded</code> option defaults to true  when using Unix sockets and can be omitted.</li>
+<li>Other options that would not make sense to use with a UNIX socket, such as
+<code>bind_addresses</code> and <code>tls</code> will be ignored and can be removed.</li>
+</ul>
+</li>
+<li><code>mode</code>: The file permissions to set on the UNIX socket. Defaults to <code>666</code></li>
+<li><strong>Note:</strong> Must be set as <code>type: http</code> (does not support <code>metrics</code> and <code>manhole</code>).
+Also make sure that <code>metrics</code> is not included in <code>resources</code> -&gt; <code>names</code></li>
+</ul>
 <p>Valid resource names are:</p>
 <ul>
 <li>
@@ -4061,7 +4157,7 @@ additional endpoints which should be loaded via dynamic modules.</p>
 <p><code>media</code>: the media API (/_matrix/media).</p>
 </li>
 <li>
-<p><code>metrics</code>: the metrics interface. See <a href="usage/configuration/../../metrics-howto.html">here</a>.</p>
+<p><code>metrics</code>: the metrics interface. See <a href="usage/configuration/../../metrics-howto.html">here</a>. (Not compatible with Unix sockets)</p>
 </li>
 <li>
 <p><code>openid</code>: OpenID authentication. See <a href="usage/configuration/../../openid.html">here</a>.</p>
@@ -4095,7 +4191,7 @@ for <a href="usage/configuration/../../workers.html">workers</a> and containers 
 </code></pre>
 <p>Example configuration #2:</p>
 <pre><code class="language-yaml">listeners:
-  # Unsecure HTTP listener: for when matrix traffic passes through a reverse proxy
+  # Insecure HTTP listener: for when matrix traffic passes through a reverse proxy
   # that unwraps TLS.
   #
   # If you plan to use a reverse proxy, please see
@@ -4122,6 +4218,20 @@ for <a href="usage/configuration/../../workers.html">workers</a> and containers 
   - port: 9000
     bind_addresses: ['::1', '127.0.0.1']
     type: manhole
+</code></pre>
+<p>Example configuration #3:</p>
+<pre><code class="language-yaml">listeners:
+  # Unix socket listener: Ideal for Synapse deployments behind a reverse proxy, offering
+  # lightweight interprocess communication without TCP/IP overhead, avoid port
+  # conflicts, and providing enhanced security through system file permissions.
+  #
+  # Note that x_forwarded will default to true, when using a UNIX socket. Please see
+  # https://matrix-org.github.io/synapse/latest/reverse_proxy.html.
+  #
+  - path: /run/synapse/main_public.sock
+    type: http
+    resources:
+      - names: [client, federation]
 </code></pre>
 <hr />
 <h3 id="manhole_settings"><a class="header" href="#manhole_settings"><code>manhole_settings</code></a></h3>
@@ -4219,6 +4329,12 @@ has missed. Disabled by default.</p>
 <li>
 <p><code>notif_for_new_users</code>: Set to false to disable automatic subscription to email
 notifications for new users. Enabled by default.</p>
+</li>
+<li>
+<p><code>notif_delay_before_mail</code>: The time to wait before emailing about a notification.
+This gives the user a chance to view the message via push or an open client.
+Defaults to 10 minutes.</p>
+<p><em>New in Synapse 1.99.0.</em></p>
 </li>
 <li>
 <p><code>client_base_url</code>: Custom URL for client links within the email notifications. By default
@@ -4452,6 +4568,13 @@ still take up to 5 minutes to purge redacted events from the database.</p>
 <pre><code class="language-yaml">redaction_retention_period: 28d
 </code></pre>
 <hr />
+<h3 id="forgotten_room_retention_period"><a class="header" href="#forgotten_room_retention_period"><code>forgotten_room_retention_period</code></a></h3>
+<p>How long to keep locally forgotten rooms before purging them from the DB.</p>
+<p>Defaults to <code>null</code>, meaning it's disabled.</p>
+<p>Example configuration:</p>
+<pre><code class="language-yaml">forgotten_room_retention_period: 28d
+</code></pre>
+<hr />
 <h3 id="user_ips_max_age"><a class="header" href="#user_ips_max_age"><code>user_ips_max_age</code></a></h3>
 <p>How long to track users' last seen time and IPs in the database.</p>
 <p>Defaults to <code>28d</code>. Set to <code>null</code> to disable clearing out of old rows.</p>
@@ -4510,11 +4633,8 @@ the <code>allowed_lifetime_min</code> and <code>allowed_lifetime_max</code> conf
 which are older than the room's maximum retention period. Synapse will also
 filter events received over federation so that events that should have been
 purged are ignored and not stored again.</p>
-<p>The message retention policies feature is disabled by default. Please be advised
-that enabling this feature carries some risk. There are known bugs with the implementation
-which can cause database corruption. Setting retention to delete older history
-is less risky than deleting newer history but in general caution is advised when enabling this
-experimental feature. You can read more about this feature <a href="usage/configuration/../../message_retention_policies.html">here</a>.</p>
+<p>The message retention policies feature is disabled by default. You can read more
+about this feature <a href="usage/configuration/../../message_retention_policies.html">here</a>.</p>
 <p>This setting has the following sub-options:</p>
 <ul>
 <li>
@@ -4602,12 +4722,12 @@ any intermediate certificates (for instance, if using certbot, use
 <hr />
 <h3 id="federation_client_minimum_tls_version"><a class="header" href="#federation_client_minimum_tls_version"><code>federation_client_minimum_tls_version</code></a></h3>
 <p>The minimum TLS version that will be used for outbound federation requests.</p>
-<p>Defaults to <code>1</code>. Configurable to <code>1</code>, <code>1.1</code>, <code>1.2</code>, or <code>1.3</code>. Note
-that setting this value higher than <code>1.2</code> will prevent federation to most
-of the public Matrix network: only configure it to <code>1.3</code> if you have an
+<p>Defaults to <code>&quot;1&quot;</code>. Configurable to <code>&quot;1&quot;</code>, <code>&quot;1.1&quot;</code>, <code>&quot;1.2&quot;</code>, or <code>&quot;1.3&quot;</code>. Note
+that setting this value higher than <code>&quot;1.2&quot;</code> will prevent federation to most
+of the public Matrix network: only configure it to <code>&quot;1.3&quot;</code> if you have an
 entirely private federation setup and you can ensure TLS 1.3 support.</p>
 <p>Example configuration:</p>
-<pre><code class="language-yaml">federation_client_minimum_tls_version: 1.2
+<pre><code class="language-yaml">federation_client_minimum_tls_version: &quot;1.2&quot;
 </code></pre>
 <hr />
 <h3 id="federation_certificate_verification_whitelist"><a class="header" href="#federation_certificate_verification_whitelist"><code>federation_certificate_verification_whitelist</code></a></h3>
@@ -4646,6 +4766,10 @@ N.B. we recommend also firewalling your federation listener to limit
 inbound federation traffic as early as possible, rather than relying
 purely on this application-layer restriction.  If not specified, the
 default is to whitelist everything.</p>
+<p>Note: this does not stop a server from joining rooms that servers not on the
+whitelist are in. As such, this option is really only useful to establish a
+&quot;private federation&quot;, where a group of servers all whitelist each other and have
+the same whitelist.</p>
 <p>Example configuration:</p>
 <pre><code class="language-yaml">federation_domain_whitelist:
   - lon.example.com
@@ -4695,6 +4819,14 @@ like sending a federation transaction.</p>
 <li><code>max_short_retries</code>: maximum number of retries for the short retry algo. Default to 3 attempts.</li>
 <li><code>max_long_retries</code>: maximum number of retries for the long retry algo. Default to 10 attempts.</li>
 </ul>
+<p>The following options control the retry logic when communicating with a specific homeserver destination.
+Unlike the previous configuration options, these values apply across all requests
+for a given destination and the state of the backoff is stored in the database.</p>
+<ul>
+<li><code>destination_min_retry_interval</code>: the initial backoff, after the first request fails. Defaults to 10m.</li>
+<li><code>destination_retry_multiplier</code>: how much we multiply the backoff by after each subsequent fail. Defaults to 2.</li>
+<li><code>destination_max_retry_interval</code>: a cap on the backoff. Defaults to a week.</li>
+</ul>
 <p>Example configuration:</p>
 <pre><code class="language-yaml">federation:
   client_timeout: 180s
@@ -4702,6 +4834,9 @@ like sending a federation transaction.</p>
   max_long_retry_delay: 100s
   max_short_retries: 5
   max_long_retries: 20
+  destination_min_retry_interval: 30s
+  destination_retry_multiplier: 5
+  destination_max_retry_interval: 12h
 </code></pre>
 <hr />
 <h2 id="caching"><a class="header" href="#caching">Caching</a></h2>
@@ -4854,7 +4989,7 @@ see <a href="usage/configuration/../../postgres.html">here</a>.</p>
   args:
     user: synapse_user
     password: secretpassword
-    database: synapse
+    dbname: synapse
     host: localhost
     port: 5432
     cp_min: 5
@@ -4936,7 +5071,7 @@ when Synapse is started.</p>
     args:
       user: synapse_user
       password: secretpassword
-      database: synapse_main
+      dbname: synapse_main
       host: localhost
       port: 5432
       cp_min: 5
@@ -4949,7 +5084,7 @@ when Synapse is started.</p>
     args:
       user: synapse_user
       password: secretpassword
-      database: synapse_state
+      dbname: synapse_state
       host: localhost
       port: 5432
       cp_min: 5
@@ -5129,6 +5264,16 @@ sending the invite. Defaults to <code>per_second: 0.2</code>, <code>burst_count:
   burst_count: 10
 </code></pre>
 <hr />
+<h3 id="rc_media_create"><a class="header" href="#rc_media_create"><code>rc_media_create</code></a></h3>
+<p>This option ratelimits creation of MXC URIs via the <code>/_matrix/media/v1/create</code>
+endpoint based on the account that's creating the media. Defaults to
+<code>per_second: 10</code>, <code>burst_count: 50</code>.</p>
+<p>Example configuration:</p>
+<pre><code class="language-yaml">rc_media_create:
+  per_second: 10
+  burst_count: 50
+</code></pre>
+<hr />
 <h3 id="rc_federation"><a class="header" href="#rc_federation"><code>rc_federation</code></a></h3>
 <p>Defines limits on federation requests.</p>
 <p>The <code>rc_federation</code> configuration has the following sub-options:</p>
@@ -5175,6 +5320,21 @@ Set to false if you are using a separate media store worker.</p>
 <p>Directory where uploaded images and attachments are stored.</p>
 <p>Example configuration:</p>
 <pre><code class="language-yaml">media_store_path: &quot;DATADIR/media_store&quot;
+</code></pre>
+<hr />
+<h3 id="max_pending_media_uploads"><a class="header" href="#max_pending_media_uploads"><code>max_pending_media_uploads</code></a></h3>
+<p>How many <em>pending media uploads</em> can a given user have? A pending media upload
+is a created MXC URI that (a) is not expired (the <code>unused_expires_at</code> timestamp
+has not passed) and (b) the media has not yet been uploaded for. Defaults to 5.</p>
+<p>Example configuration:</p>
+<pre><code class="language-yaml">max_pending_media_uploads: 5
+</code></pre>
+<hr />
+<h3 id="unused_expiration_time"><a class="header" href="#unused_expiration_time"><code>unused_expiration_time</code></a></h3>
+<p>How long to wait in milliseconds before expiring created media IDs. Defaults to
+&quot;24h&quot;</p>
+<p>Example configuration:</p>
+<pre><code class="language-yaml">unused_expiration_time: &quot;1h&quot;
 </code></pre>
 <hr />
 <h3 id="media_storage_providers"><a class="header" href="#media_storage_providers"><code>media_storage_providers</code></a></h3>
@@ -5855,7 +6015,10 @@ Defaults to false.</p>
 <hr />
 <h3 id="sentry"><a class="header" href="#sentry"><code>sentry</code></a></h3>
 <p>Use this option to enable sentry integration. Provide the DSN assigned to you by sentry
-with the <code>dsn</code> setting.</p>
+with the <code>dsn</code> setting. </p>
+<p>An optional <code>environment</code> field can be used to specify an environment. This allows
+for log maintenance based on different environments, ensuring better organization
+and analysis..</p>
 <p>NOTE: While attempts are made to ensure that the logs don't contain
 any sensitive information, this cannot be guaranteed. By enabling
 this option the sentry server may therefore receive sensitive
@@ -5863,6 +6026,7 @@ information, and it in turn may then disseminate sensitive information
 through insecure notification channels if so configured.</p>
 <p>Example configuration:</p>
 <pre><code class="language-yaml">sentry:
+    environment: &quot;production&quot;
     dsn: &quot;...&quot;
 </code></pre>
 <hr />
@@ -5982,6 +6146,15 @@ Implicitly enables MAU tracking for application service users.</p>
 <pre><code class="language-yaml">track_appservice_user_ips: true
 </code></pre>
 <hr />
+<h3 id="use_appservice_legacy_authorization"><a class="header" href="#use_appservice_legacy_authorization"><code>use_appservice_legacy_authorization</code></a></h3>
+<p>Whether to send the application service access tokens via the <code>access_token</code> query parameter
+per older versions of the Matrix specification. Defaults to false. Set to true to enable sending
+access tokens via a query parameter.</p>
+<p>**Enabling this option is considered insecure and is not recommended. **</p>
+<p>Example configuration:</p>
+<pre><code class="language-yaml">use_appservice_legacy_authorization: true
+</code></pre>
+<hr />
 <h3 id="macaroon_secret_key"><a class="header" href="#macaroon_secret_key"><code>macaroon_secret_key</code></a></h3>
 <p>A secret which is used to sign</p>
 <ul>
@@ -6041,7 +6214,7 @@ are still valid. Defaults to 1d.</p>
 <p>Normally, the connection to the key server is validated via TLS certificates.
 Additional security can be provided by configuring a <code>verify key</code>, which
 will make synapse check that the response is signed by that key.</p>
-<p>This setting supercedes an older setting named <code>perspectives</code>. The old format
+<p>This setting supersedes an older setting named <code>perspectives</code>. The old format
 is still supported for backwards-compatibility, but it is deprecated.</p>
 <p><code>trusted_key_servers</code> defaults to matrix.org, but using it will generate a
 warning on start-up. To suppress this warning, set
@@ -6109,6 +6282,16 @@ enable SAML login. You can either put your entire pysaml config inline using the
 option, or you can specify a path to a psyaml config file with the sub-option <code>config_path</code>.
 This setting has the following sub-options:</p>
 <ul>
+<li><code>idp_name</code>: A user-facing name for this identity provider, which is used to
+offer the user a choice of login mechanisms.</li>
+<li><code>idp_icon</code>: An optional icon for this identity provider, which is presented
+by clients and Synapse's own IdP picker page. If given, must be an
+MXC URI of the format <code>mxc://&lt;server-name&gt;/&lt;media-id&gt;</code>. (An easy way to
+obtain such an MXC URI is to upload an image to an (unencrypted) room
+and then copy the &quot;url&quot; from the source of the event.)</li>
+<li><code>idp_brand</code>: An optional brand for this identity provider, allowing clients
+to style the login flow according to the identity provider in question.
+See the <a href="https://spec.matrix.org/latest/">spec</a> for possible options here.</li>
 <li><code>sp_config</code>: the configuration for the pysaml2 Service Provider. See pysaml2 docs for format of config.
 Default values will be used for the <code>entityid</code> and <code>service</code> settings,
 so it is not normally necessary to specify them unless you need to
@@ -6267,7 +6450,7 @@ offer the user a choice of login mechanisms.</p>
 <li>
 <p><code>idp_icon</code>: An optional icon for this identity provider, which is presented
 by clients and Synapse's own IdP picker page. If given, must be an
-MXC URI of the format mxc://<server-name>/<media-id>. (An easy way to
+MXC URI of the format <code>mxc://&lt;server-name&gt;/&lt;media-id&gt;</code>. (An easy way to
 obtain such an MXC URI is to upload an image to an (unencrypted) room
 and then copy the &quot;url&quot; from the source of the event.)</p>
 </li>
@@ -6289,7 +6472,15 @@ is enabled) to discover the provider's endpoints.</p>
 </li>
 <li>
 <p><code>client_secret</code>: oauth2 client secret to use. May be omitted if
-<code>client_secret_jwt_key</code> is given, or if <code>client_auth_method</code> is 'none'.</p>
+<code>client_secret_jwt_key</code> is given, or if <code>client_auth_method</code> is 'none'.
+Must be omitted if <code>client_secret_path</code> is specified.</p>
+</li>
+<li>
+<p><code>client_secret_path</code>: path to the oauth2 client secret to use. With that
+it's not necessary to leak secrets into the config file itself.
+Mutually exclusive with <code>client_secret</code>. Can be omitted if
+<code>client_secret_jwt_key</code> is specified.</p>
+<p><em>Added in Synapse 1.91.0.</em></p>
 </li>
 <li>
 <p><code>client_secret_jwt_key</code>: Alternative to client_secret: details of a key used
@@ -6509,25 +6700,61 @@ claim MUST contain &quot;admin&quot;.</p>
 <p>Enable Central Authentication Service (CAS) for registration and login.
 Has the following sub-options:</p>
 <ul>
-<li><code>enabled</code>: Set this to true to enable authorization against a CAS server.
-Defaults to false.</li>
-<li><code>server_url</code>: The URL of the CAS authorization endpoint.</li>
-<li><code>displayname_attribute</code>: The attribute of the CAS response to use as the display name.
-If no name is given here, no displayname will be set.</li>
-<li><code>required_attributes</code>:  It is possible to configure Synapse to only allow logins if CAS attributes
+<li>
+<p><code>enabled</code>: Set this to true to enable authorization against a CAS server.
+Defaults to false.</p>
+</li>
+<li>
+<p><code>idp_name</code>: A user-facing name for this identity provider, which is used to
+offer the user a choice of login mechanisms.</p>
+</li>
+<li>
+<p><code>idp_icon</code>: An optional icon for this identity provider, which is presented
+by clients and Synapse's own IdP picker page. If given, must be an
+MXC URI of the format <code>mxc://&lt;server-name&gt;/&lt;media-id&gt;</code>. (An easy way to
+obtain such an MXC URI is to upload an image to an (unencrypted) room
+and then copy the &quot;url&quot; from the source of the event.)</p>
+</li>
+<li>
+<p><code>idp_brand</code>: An optional brand for this identity provider, allowing clients
+to style the login flow according to the identity provider in question.
+See the <a href="https://spec.matrix.org/latest/">spec</a> for possible options here.</p>
+</li>
+<li>
+<p><code>server_url</code>: The URL of the CAS authorization endpoint.</p>
+</li>
+<li>
+<p><code>protocol_version</code>: The CAS protocol version, defaults to none (version 3 is required if you want to use &quot;required_attributes&quot;).</p>
+</li>
+<li>
+<p><code>displayname_attribute</code>: The attribute of the CAS response to use as the display name.
+If no name is given here, no displayname will be set.</p>
+</li>
+<li>
+<p><code>required_attributes</code>:  It is possible to configure Synapse to only allow logins if CAS attributes
 match particular values. All of the keys given below must exist
 and the values must match the given value. Alternately if the given value
 is <code>None</code> then any value is allowed (the attribute just must exist).
-All of the listed attributes must match for the login to be permitted.</li>
+All of the listed attributes must match for the login to be permitted.</p>
+</li>
+<li>
+<p><code>enable_registration</code>: set to 'false' to disable automatic registration of new
+users. This allows the CAS SSO flow to be limited to sign in only, rather than
+automatically registering users that have a valid SSO login but do not have
+a pre-registered account. Defaults to true.</p>
+<p><em>Added in Synapse 1.93.0.</em></p>
+</li>
 </ul>
 <p>Example configuration:</p>
 <pre><code class="language-yaml">cas_config:
   enabled: true
   server_url: &quot;https://cas-server.com&quot;
+  protocol_version: 3
   displayname_attribute: name
   required_attributes:
     userGroup: &quot;staff&quot;
     department: None
+  enable_registration: true
 </code></pre>
 <hr />
 <h3 id="sso"><a class="header" href="#sso"><code>sso</code></a></h3>
@@ -6611,7 +6838,7 @@ validation will fail without configuring audiences.</li>
 <li><code>enabled</code>: Defaults to true.
 Set to false to disable password authentication.
 Set to <code>only_for_reauth</code> to allow users with existing passwords to use them
-to log in and reauthenticate, whilst preventing new users from setting passwords.</li>
+to reauthenticate (not log in), whilst preventing new users from setting passwords.</li>
 <li><code>localdb_enabled</code>: Set to false to disable authentication against the local password
 database. This is ignored if <code>enabled</code> is false, and is only useful
 if you have other <code>password_providers</code>. Defaults to true.</li>
@@ -6734,12 +6961,16 @@ user does not share a room with the requester.</p>
 If set to true, local users are more likely to appear above remote users when searching the
 user directory. Defaults to false.</p>
 </li>
+<li>
+<p><code>show_locked_users</code>: Defines whether to show locked users in search query results. Defaults to false.</p>
+</li>
 </ul>
 <p>Example configuration:</p>
 <pre><code class="language-yaml">user_directory:
     enabled: false
     search_all_users: true
     prefer_local_users: true
+    show_locked_users: true
 </code></pre>
 <hr />
 <h3 id="user_consent"><a class="header" href="#user_consent"><code>user_consent</code></a></h3>
@@ -6822,13 +7053,21 @@ notices.</p>
 <li><code>system_mxid_display_name</code>: set the display name of the &quot;notices&quot; user</li>
 <li><code>system_mxid_avatar_url</code>: set the avatar for the &quot;notices&quot; user</li>
 <li><code>room_name</code>: set the room name of the server notices room</li>
+<li><code>room_avatar_url</code>: optional string. The room avatar to use for server notice rooms. If set to the empty string <code>&quot;&quot;</code>, notice rooms will not be given an avatar. Defaults to the empty string. <em>Added in Synapse 1.99.0.</em></li>
+<li><code>room_topic</code>: optional string. The topic to use for server notice rooms. If set to the empty string <code>&quot;&quot;</code>, notice rooms will not be given a topic. Defaults to the empty string.  <em>Added in Synapse 1.99.0.</em></li>
+<li><code>auto_join</code>: boolean. If true, the user will be automatically joined to the room instead of being invited.
+Defaults to false. <em>Added in Synapse 1.98.0.</em></li>
 </ul>
+<p>Note that the name, topic and avatar of existing server notice rooms will only be updated when a new notice event is sent.</p>
 <p>Example configuration:</p>
 <pre><code class="language-yaml">server_notices:
   system_mxid_localpart: notices
   system_mxid_display_name: &quot;Server Notices&quot;
-  system_mxid_avatar_url: &quot;mxc://server.com/oumMVlgDnLYFaPVkExemNVVZ&quot;
+  system_mxid_avatar_url: &quot;mxc://example.com/oumMVlgDnLYFaPVkExemNVVZ&quot;
   room_name: &quot;Server Notices&quot;
+  room_avatar_url: &quot;mxc://example.com/oumMVlgDnLYFaPVkExemNVVZ&quot;
+  room_topic: &quot;Room used by your server admin to notice you of important information&quot;
+  auto_join: true
 </code></pre>
 <hr />
 <h3 id="enable_room_list_search"><a class="header" href="#enable_room_list_search"><code>enable_room_list_search</code></a></h3>
@@ -6840,53 +7079,126 @@ users by always returning an empty list for all queries. Defaults to true.</p>
 </code></pre>
 <hr />
 <h3 id="alias_creation_rules"><a class="header" href="#alias_creation_rules"><code>alias_creation_rules</code></a></h3>
-<p>The <code>alias_creation_rules</code> option controls who is allowed to create aliases
-on this server.</p>
-<p>The format of this option is a list of rules that contain globs that
-match against user_id, room_id and the new alias (fully qualified with
-server name). The action in the first rule that matches is taken,
-which can currently either be &quot;allow&quot; or &quot;deny&quot;.</p>
-<p>Missing user_id/room_id/alias fields default to &quot;*&quot;.</p>
-<p>If no rules match the request is denied. An empty list means no one
-can create aliases.</p>
-<p>Options for the rules include:</p>
+<p>The <code>alias_creation_rules</code> option allows server admins to prevent unwanted
+alias creation on this server.</p>
+<p>This setting is an optional list of 0 or more rules. By default, no list is
+provided, meaning that all alias creations are permitted.</p>
+<p>Otherwise, requests to create aliases are matched against each rule in order.
+The first rule that matches decides if the request is allowed or denied. If no
+rule matches, the request is denied. In particular, this means that configuring
+an empty list of rules will deny every alias creation request.</p>
+<p>Each rule is a YAML object containing four fields, each of which is an optional string:</p>
 <ul>
-<li><code>user_id</code>: Matches against the creator of the alias. Defaults to &quot;*&quot;.</li>
-<li><code>alias</code>: Matches against the alias being created. Defaults to &quot;*&quot;.</li>
-<li><code>room_id</code>: Matches against the room ID the alias is being pointed at. Defaults to &quot;*&quot;</li>
-<li><code>action</code>: Whether to &quot;allow&quot; or &quot;deny&quot; the request if the rule matches. Defaults to allow.</li>
+<li><code>user_id</code>: a glob pattern that matches against the creator of the alias.</li>
+<li><code>alias</code>: a glob pattern that matches against the alias being created.</li>
+<li><code>room_id</code>: a glob pattern that matches against the room ID the alias is being pointed at.</li>
+<li><code>action</code>: either <code>allow</code> or <code>deny</code>. What to do with the request if the rule matches. Defaults to <code>allow</code>.</li>
 </ul>
+<p>Each of the glob patterns is optional, defaulting to <code>*</code> (&quot;match anything&quot;).
+Note that the patterns match against fully qualified IDs, e.g. against
+<code>@alice:example.com</code>, <code>#room:example.com</code> and <code>!abcdefghijk:example.com</code> instead
+of <code>alice</code>, <code>room</code> and <code>abcedgghijk</code>.</p>
 <p>Example configuration:</p>
-<pre><code class="language-yaml">alias_creation_rules:
-  - user_id: &quot;bad_user&quot;
-    alias: &quot;spammy_alias&quot;
-    room_id: &quot;*&quot;
+<pre><code class="language-yaml"># No rule list specified. All alias creations are allowed.
+# This is the default behaviour.
+alias_creation_rules:
+</code></pre>
+<pre><code class="language-yaml"># A list of one rule which allows everything.
+# This has the same effect as the previous example.
+alias_creation_rules:
+  - &quot;action&quot;: &quot;allow&quot;
+</code></pre>
+<pre><code class="language-yaml"># An empty list of rules. All alias creations are denied.
+alias_creation_rules: []
+</code></pre>
+<pre><code class="language-yaml"># A list of one rule which denies everything.
+# This has the same effect as the previous example.
+alias_creation_rules:
+  - &quot;action&quot;: &quot;deny&quot;
+</code></pre>
+<pre><code class="language-yaml"># Prevent a specific user from creating aliases.
+# Allow other users to create any alias
+alias_creation_rules:
+  - user_id: &quot;@bad_user:example.com&quot;
     action: deny
+
+  - action: allow
+</code></pre>
+<pre><code class="language-yaml"># Prevent aliases being created which point to a specific room.
+alias_creation_rules:
+  - room_id: &quot;!forbiddenRoom:example.com&quot;
+    action: deny
+
+  - action: allow
 </code></pre>
 <hr />
 <h3 id="room_list_publication_rules"><a class="header" href="#room_list_publication_rules"><code>room_list_publication_rules</code></a></h3>
-<p>The <code>room_list_publication_rules</code> option controls who can publish and
-which rooms can be published in the public room list.</p>
+<p>The <code>room_list_publication_rules</code> option allows server admins to prevent
+unwanted entries from being published in the public room list.</p>
 <p>The format of this option is the same as that for
-<code>alias_creation_rules</code>.</p>
-<p>If the room has one or more aliases associated with it, only one of
-the aliases needs to match the alias rule. If there are no aliases
-then only rules with <code>alias: *</code> match.</p>
-<p>If no rules match the request is denied. An empty list means no one
-can publish rooms.</p>
-<p>Options for the rules include:</p>
+<a href="usage/configuration/config_documentation.html#alias_creation_rules"><code>alias_creation_rules</code></a>: an optional list of 0 or more
+rules. By default, no list is provided, meaning that all rooms may be
+published to the room list.</p>
+<p>Otherwise, requests to publish a room are matched against each rule in order.
+The first rule that matches decides if the request is allowed or denied. If no
+rule matches, the request is denied. In particular, this means that configuring
+an empty list of rules will deny every alias creation request.</p>
+<p>Each rule is a YAML object containing four fields, each of which is an optional string:</p>
 <ul>
-<li><code>user_id</code>: Matches against the creator of the alias. Defaults to &quot;*&quot;.</li>
-<li><code>alias</code>: Matches against any current local or canonical aliases associated with the room. Defaults to &quot;*&quot;.</li>
-<li><code>room_id</code>: Matches against the room ID being published. Defaults to &quot;*&quot;.</li>
-<li><code>action</code>: Whether to &quot;allow&quot; or &quot;deny&quot; the request if the rule matches. Defaults to allow.</li>
+<li><code>user_id</code>: a glob pattern that matches against the user publishing the room.</li>
+<li><code>alias</code>: a glob pattern that matches against one of published room's aliases.
+<ul>
+<li>If the room has no aliases, the alias match fails unless <code>alias</code> is unspecified or <code>*</code>.</li>
+<li>If the room has exactly one alias, the alias match succeeds if the <code>alias</code> pattern matches that alias.</li>
+<li>If the room has two or more aliases, the alias match succeeds if the pattern matches at least one of the aliases.</li>
 </ul>
+</li>
+<li><code>room_id</code>: a glob pattern that matches against the room ID of the room being published.</li>
+<li><code>action</code>: either <code>allow</code> or <code>deny</code>. What to do with the request if the rule matches. Defaults to <code>allow</code>.</li>
+</ul>
+<p>Each of the glob patterns is optional, defaulting to <code>*</code> (&quot;match anything&quot;).
+Note that the patterns match against fully qualified IDs, e.g. against
+<code>@alice:example.com</code>, <code>#room:example.com</code> and <code>!abcdefghijk:example.com</code> instead
+of <code>alice</code>, <code>room</code> and <code>abcedgghijk</code>.</p>
 <p>Example configuration:</p>
-<pre><code class="language-yaml">room_list_publication_rules:
-  - user_id: &quot;*&quot;
-    alias: &quot;*&quot;
-    room_id: &quot;*&quot;
-    action: allow
+<pre><code class="language-yaml"># No rule list specified. Anyone may publish any room to the public list.
+# This is the default behaviour.
+room_list_publication_rules:
+</code></pre>
+<pre><code class="language-yaml"># A list of one rule which allows everything.
+# This has the same effect as the previous example.
+room_list_publication_rules:
+  - &quot;action&quot;: &quot;allow&quot;
+</code></pre>
+<pre><code class="language-yaml"># An empty list of rules. No-one may publish to the room list.
+room_list_publication_rules: []
+</code></pre>
+<pre><code class="language-yaml"># A list of one rule which denies everything.
+# This has the same effect as the previous example.
+room_list_publication_rules:
+  - &quot;action&quot;: &quot;deny&quot;
+</code></pre>
+<pre><code class="language-yaml"># Prevent a specific user from publishing rooms.
+# Allow other users to publish anything.
+room_list_publication_rules:
+  - user_id: &quot;@bad_user:example.com&quot;
+    action: deny
+
+  - action: allow
+</code></pre>
+<pre><code class="language-yaml"># Prevent publication of a specific room.
+room_list_publication_rules:
+  - room_id: &quot;!forbiddenRoom:example.com&quot;
+    action: deny
+
+  - action: allow
+</code></pre>
+<pre><code class="language-yaml"># Prevent publication of rooms with at least one alias containing the word &quot;potato&quot;.
+room_list_publication_rules:
+  - alias: &quot;#*potato*:example.com&quot;
+    action: deny
+
+  - action: allow
 </code></pre>
 <hr />
 <h3 id="default_power_level_content_override"><a class="header" href="#default_power_level_content_override"><code>default_power_level_content_override</code></a></h3>
@@ -6913,6 +7225,16 @@ except <code>com.example.foo</code>.</p>
 normally or via a kick or ban. Defaults to false.</p>
 <p>Example configuration:</p>
 <pre><code class="language-yaml">forget_rooms_on_leave: false
+</code></pre>
+<hr />
+<h3 id="exclude_rooms_from_sync"><a class="header" href="#exclude_rooms_from_sync"><code>exclude_rooms_from_sync</code></a></h3>
+<p>A list of rooms to exclude from sync responses. This is useful for server
+administrators wishing to group users into a room without these users being able
+to see it from their client.</p>
+<p>By default, no room is excluded.</p>
+<p>Example configuration:</p>
+<pre><code class="language-yaml">exclude_rooms_from_sync:
+    - !foo:example.com
 </code></pre>
 <hr />
 <h2 id="opentracing"><a class="header" href="#opentracing">Opentracing</a></h2>
@@ -7038,11 +7360,11 @@ events may be dropped).</p>
 <p>When using workers this should be a map from <a href="usage/configuration/config_documentation.html#worker_name"><code>worker_name</code></a> to the HTTP
 replication listener of the worker, if configured, and to the main process. Each worker
 declared under <a href="usage/configuration/../../workers.html#stream-writers"><code>stream_writers</code></a> and
-<a href="usage/configuration/config_documentation.html#outbound_federation_restricted_to"><code>outbound_federation_restricted_to</code></a> needs a HTTP replication listener, and that
-listener should be included in the <code>instance_map</code>. The main process also needs an entry
-on the <code>instance_map</code>, and it should be listed under <code>main</code> <strong>if even one other worker
-exists</strong>. Ensure the port matches with what is declared inside the <code>listener</code> block for
-a <code>replication</code> listener.</p>
+<a href="usage/configuration/config_documentation.html#outbound_federation_restricted_to"><code>outbound_federation_restricted_to</code></a> needs a HTTP
+replication listener, and that listener should be included in the <code>instance_map</code>. The
+main process also needs an entry on the <code>instance_map</code>, and it should be listed under
+<code>main</code> <strong>if even one other worker exists</strong>. Ensure the port matches with what is
+declared inside the <code>listener</code> block for a <code>replication</code> listener.</p>
 <p>Example configuration:</p>
 <pre><code class="language-yaml">instance_map:
   main:
@@ -7051,6 +7373,13 @@ a <code>replication</code> listener.</p>
   worker1:
     host: localhost
     port: 8034
+</code></pre>
+<p>Example configuration(#2, for UNIX sockets):</p>
+<pre><code class="language-yaml">instance_map:
+  main:
+    path: /run/synapse/main_replication.sock
+  worker1:
+    path: /run/synapse/worker1_replication.sock
 </code></pre>
 <hr />
 <h3 id="stream_writers"><a class="header" href="#stream_writers"><code>stream_writers</code></a></h3>
@@ -7068,14 +7397,18 @@ Any worker specified here must also be in the <a href="usage/configuration/confi
 <h3 id="outbound_federation_restricted_to"><a class="header" href="#outbound_federation_restricted_to"><code>outbound_federation_restricted_to</code></a></h3>
 <p>When using workers, you can restrict outbound federation traffic to only go through a
 specific subset of workers. Any worker specified here must also be in the
-<a href="usage/configuration/config_documentation.html#instance_map"><code>instance_map</code></a>.</p>
+<a href="usage/configuration/config_documentation.html#instance_map"><code>instance_map</code></a>.
+<a href="usage/configuration/config_documentation.html#worker_replication_secret"><code>worker_replication_secret</code></a> must also be configured to
+authorize inter-worker communication.</p>
 <pre><code class="language-yaml">outbound_federation_restricted_to:
   - federation_sender1
   - federation_sender2
 </code></pre>
-<h2>Also see the <a href="usage/configuration/../../workers.html#restrict-outbound-federation-traffic-to-a-specific-set-of-workers">worker
+<p>Also see the <a href="usage/configuration/../../workers.html#restrict-outbound-federation-traffic-to-a-specific-set-of-workers">worker
 documentation</a>
-for more info.</h2>
+for more info.</p>
+<p><em>Added in Synapse 1.89.0.</em></p>
+<hr />
 <h3 id="run_background_tasks_on"><a class="header" href="#run_background_tasks_on"><code>run_background_tasks_on</code></a></h3>
 <p>The <a href="usage/configuration/../../workers.html#background-tasks">worker</a> that is used to run
 background tasks (e.g. cleaning up expired data). If not provided this
@@ -7193,12 +7526,23 @@ giving each worker a unique <code>worker_name</code>.</p>
 must be declared, in the same way as the <a href="usage/configuration/config_documentation.html#listeners"><code>listeners</code> option</a>
 in the shared config.</p>
 <p>Workers declared in <a href="usage/configuration/config_documentation.html#stream_writers"><code>stream_writers</code></a> and <a href="usage/configuration/config_documentation.html#instance_map"><code>instance_map</code></a>
-will need to include a <code>replication</code> listener here, in order to accept internal HTTP 
+will need to include a <code>replication</code> listener here, in order to accept internal HTTP
 requests from other workers.</p>
 <p>Example configuration:</p>
 <pre><code class="language-yaml">worker_listeners:
   - type: http
     port: 8083
+    resources:
+      - names: [client, federation]
+</code></pre>
+<p>Example configuration(#2, using UNIX sockets with a <code>replication</code> listener):</p>
+<pre><code class="language-yaml">worker_listeners:
+  - type: http
+    path: /run/synapse/worker_replication.sock
+    resources:
+      - names: [replication]
+  - type: http
+    path: /run/synapse/worker_public.sock
     resources:
       - names: [client, federation]
 </code></pre>
@@ -7415,7 +7759,7 @@ disable_existing_loggers: false
 <p>A structured logging system can be useful when your logs are destined for a
 machine to parse and process. By maintaining its machine-readable characteristics,
 it enables more efficient searching and aggregations when consumed by software
-such as the &quot;ELK stack&quot;.</p>
+such as the <a href="https://opensource.com/article/18/9/open-source-log-aggregation-tools">ELK stack</a>.</p>
 <p>Synapse's structured logging system is configured via the file that Synapse's
 <code>log_config</code> config option points to. The file should include a formatter which
 uses the <code>synapse.logging.TerseJsonFormatter</code> class included with Synapse and a
@@ -9105,14 +9449,18 @@ section, which should look like this:</p>
 <pre><code class="language-yaml">server_notices:
    system_mxid_localpart: server
    system_mxid_display_name: &quot;Server Notices&quot;
-   system_mxid_avatar_url: &quot;mxc://server.com/oumMVlgDnLYFaPVkExemNVVZ&quot;
+   system_mxid_avatar_url: &quot;mxc://example.com/oumMVlgDnLYFaPVkExemNVVZ&quot;
    room_name: &quot;Server Notices&quot;
+   room_avatar_url: &quot;mxc://example.com/oumMVlgDnLYFaPVkExemNVVZ&quot;
+   room_topic: &quot;Room used by your server admin to notice you of important information&quot;
+   auto_join: true
 </code></pre>
 <p>The only compulsory setting is <code>system_mxid_localpart</code>, which defines the user
 id of the Server Notices user, as above. <code>room_name</code> defines the name of the
-room which will be created.</p>
+room which will be created, <code>room_avatar_url</code> its avatar and <code>room_topic</code> its topic.</p>
 <p><code>system_mxid_display_name</code> and <code>system_mxid_avatar_url</code> can be used to set the
 displayname and avatar of the Server Notices user.</p>
+<p><code>auto_join</code> will autojoin users to the notices room instead of sending an invite.</p>
 <h2 id="sending-notices"><a class="header" href="#sending-notices">Sending notices</a></h2>
 <p>To send server notices to users you can use the
 <a href="admin_api/server_notices.html">admin_api</a>.</p>
@@ -9122,9 +9470,9 @@ terms and conditions set by the administrator of a server - and blocking access
 to the server until they have.</p>
 <p>There are several parts to this functionality; each requires some specific
 configuration in <code>homeserver.yaml</code> to be enabled.</p>
-<p>Note that various parts of the configuation and this document refer to the
+<p>Note that various parts of the configuration and this document refer to the
 &quot;privacy policy&quot;: agreement with a privacy policy is one particular use of this
-feature, but of course adminstrators can specify other terms and conditions
+feature, but of course administrators can specify other terms and conditions
 unrelated to &quot;privacy&quot; per se.</p>
 <h2 id="collecting-policy-agreement-from-a-user"><a class="header" href="#collecting-policy-agreement-from-a-user">Collecting policy agreement from a user</a></h2>
 <p>Synapse can be configured to serve the user a simple policy form with an
@@ -9278,40 +9626,40 @@ consent uri for that user.</p>
 URI that clients use to connect to the server. (It is used to construct
 <code>consent_uri</code> in the error.)</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="user-directory-api-implementation"><a class="header" href="#user-directory-api-implementation">User Directory API Implementation</a></h1>
-<p>The user directory is currently maintained based on the 'visible' users
-on this particular server - i.e. ones which your account shares a room with, or
-who are present in a publicly viewable room present on the server.</p>
-<p>The directory info is stored in various tables, which can (typically after
-DB corruption) get stale or out of sync. If this happens, for now the
+<p>The user directory is maintained based on users that are 'visible' to the homeserver -
+i.e. ones which are local to the server and ones which any local user shares a
+room with.</p>
+<p>The directory info is stored in various tables, which can sometimes get out of
+sync (although this is considered a bug). If this happens, for now the
 solution to fix it is to use the <a href="usage/administration/admin_api/background_updates.html#run">admin API</a>
 and execute the job <code>regenerate_directory</code>. This should then start a background task to
-flush the current tables and regenerate the directory.</p>
+flush the current tables and regenerate the directory. Depending on the size
+of your homeserver (number of users and rooms) this can take a while.</p>
 <h2 id="data-model"><a class="header" href="#data-model">Data model</a></h2>
 <p>There are five relevant tables that collectively form the &quot;user directory&quot;.
-Three of them track a master list of all the users we could search for.
-The last two (collectively called the &quot;search tables&quot;) track who can
-see who.</p>
+Three of them track a list of all known users. The last two (collectively called
+the &quot;search tables&quot;) track which users are visible to each other.</p>
 <p>From all of these tables we exclude three types of local user:</p>
 <ul>
 <li>support users</li>
 <li>appservice users</li>
 <li>deactivated users</li>
 </ul>
+<p>A description of each table follows:</p>
 <ul>
 <li>
-<p><code>user_directory</code>. This contains the user_id, display name and avatar we'll
-return when you search the directory.</p>
+<p><code>user_directory</code>. This contains the user ID, display name and avatar of each user.</p>
 <ul>
-<li>Because there's only one directory entry per user, it's important that we only
-ever put publicly visible names here. Otherwise we might leak a private
+<li>Because there is only one directory entry per user, it is important that it
+only contain publicly visible information. Otherwise, this will leak the
 nickname or avatar used in a private room.</li>
 <li>Indexed on rooms. Indexed on users.</li>
 </ul>
 </li>
 <li>
 <p><code>user_directory_search</code>. To be joined to <code>user_directory</code>. It contains an extra
-column that enables full text search based on user ids and display names.
-Different schemas for SQLite and Postgres with different code paths to match.</p>
+column that enables full text search based on user IDs and display names.
+Different schemas for SQLite and Postgres are used.</p>
 <ul>
 <li>Indexed on the full text search data. Indexed on users.</li>
 </ul>
@@ -9320,18 +9668,93 @@ Different schemas for SQLite and Postgres with different code paths to match.</p
 <p><code>user_directory_stream_pos</code>. When the initial background update to populate
 the directory is complete, we record a stream position here. This indicates
 that synapse should now listen for room changes and incrementally update
-the directory where necessary.</p>
+the directory where necessary. (See <a href="development/synapse_architecture/streams.html">stream positions</a>.)</p>
 </li>
 <li>
-<p><code>users_in_public_rooms</code>. Contains associations between users and the public rooms they're in.
-Used to determine which users are in public rooms and should be publicly visible in the directory.</p>
+<p><code>users_in_public_rooms</code>. Contains associations between users and the public
+rooms they're in.  Used to determine which users are in public rooms and should
+be publicly visible in the directory. Both local and remote users are tracked.</p>
 </li>
 <li>
 <p><code>users_who_share_private_rooms</code>. Rows are triples <code>(L, M, room id)</code> where <code>L</code>
 is a local user and <code>M</code> is a local or remote user. <code>L</code> and <code>M</code> should be
 different, but this isn't enforced by a constraint.</p>
+<p>Note that if two local users share a room then there will be two entries:
+<code>(user1, user2, !room_id)</code> and <code>(user2, user1, !room_id)</code>.</p>
 </li>
 </ul>
+<h2 id="configuration-options"><a class="header" href="#configuration-options">Configuration options</a></h2>
+<p>The exact way user search works can be tweaked via some server-level
+<a href="usage/configuration/config_documentation.html#user_directory">configuration options</a>.</p>
+<p>The information is not repeated here, but the options are mentioned below.</p>
+<h2 id="search-algorithm"><a class="header" href="#search-algorithm">Search algorithm</a></h2>
+<p>If <code>search_all_users</code> is <code>false</code>, then results are limited to users who:</p>
+<ol>
+<li>Are found in the <code>users_in_public_rooms</code> table, or</li>
+<li>Are found in the <code>users_who_share_private_rooms</code> where <code>L</code> is the requesting
+user and <code>M</code> is the search result.</li>
+</ol>
+<p>Otherwise, if <code>search_all_users</code> is <code>true</code>, no such limits are placed and all
+users known to the server (matching the search query) will be returned.</p>
+<p>By default, locked users are not returned. If <code>show_locked_users</code> is <code>true</code> then
+no filtering on the locked status of a user is done.</p>
+<p>The user provided search term is lowercased and normalized using <a href="https://en.wikipedia.org/wiki/Unicode_equivalence#Normalization">NFKC</a>,
+this treats the string as case-insensitive, canonicalizes different forms of the
+same text, and maps some &quot;roughly equivalent&quot; characters together.</p>
+<p>The search term is then split into words:</p>
+<ul>
+<li>If <a href="https://en.wikipedia.org/wiki/International_Components_for_Unicode">ICU</a> is
+available, then the system's <a href="https://unicode-org.github.io/icu/userguide/locale/#default-locales">default locale</a>
+will be used to break the search term into words. (See the
+<a href="setup/installation.html">installation instructions</a> for how to install ICU.)</li>
+<li>If unavailable, then runs of ASCII characters, numbers, underscores, and hyphens
+are considered words.</li>
+</ul>
+<p>The queries for PostgreSQL and SQLite are detailed below, by their overall goal
+is to find matching users, preferring users who are &quot;real&quot; (e.g. not bots,
+not deactivated). It is assumed that real users will have an display name and
+avatar set.</p>
+<h3 id="postgresql"><a class="header" href="#postgresql">PostgreSQL</a></h3>
+<p>The above words are then transformed into two queries:</p>
+<ol>
+<li>&quot;exact&quot; which matches the parsed words exactly (using <a href="https://www.postgresql.org/docs/current/textsearch-controls.html#TEXTSEARCH-PARSING-QUERIES"><code>to_tsquery</code></a>);</li>
+<li>&quot;prefix&quot; which matches the parsed words as prefixes (using <code>to_tsquery</code>).</li>
+</ol>
+<p>Results are composed of all rows in the <code>user_directory_search</code> table whose information
+matches one (or both) of these queries. Results are ordered by calculating a weighted
+score for each result, higher scores are returned first:</p>
+<ul>
+<li>4x if a user ID exists.</li>
+<li>1.2x if the user has a display name set.</li>
+<li>1.2x if the user has an avatar set.</li>
+<li>0x-3x by the full text search results using the <a href="https://www.postgresql.org/docs/current/textsearch-controls.html#TEXTSEARCH-RANKING"><code>ts_rank_cd</code> function</a>
+against the &quot;exact&quot; search query; this has four variables with the following weightings:
+<ul>
+<li><code>D</code>: 0.1 for the user ID's domain</li>
+<li><code>C</code>: 0.1 for unused</li>
+<li><code>B</code>: 0.9 for the user's display name (or an empty string if it is not set)</li>
+<li><code>A</code>: 0.1 for the user ID's localpart</li>
+</ul>
+</li>
+<li>0x-1x by the full text search results using the <code>ts_rank_cd</code> function against the
+&quot;prefix&quot; search query. (Using the same weightings as above.)</li>
+<li>If <code>prefer_local_users</code> is <code>true</code>, then 2x if the user is local to the homeserver.</li>
+</ul>
+<p>Note that <code>ts_rank_cd</code> returns a weight between 0 and 1. The initial weighting of
+all results is 1.</p>
+<h3 id="sqlite"><a class="header" href="#sqlite">SQLite</a></h3>
+<p>Results are composed of all rows in the <code>user_directory_search</code> whose information
+matches the query. Results are ordered by the following information, with each
+subsequent column used as a tiebreaker, for each result:</p>
+<ol>
+<li>By the <a href="https://www.sqlite.org/windowfunctions.html#built_in_window_functions"><code>rank</code></a>
+of the full text search results using the <a href="https://www.sqlite.org/fts3.html#matchinfo"><code>matchinfo</code> function</a>. Higher
+ranks are returned first.</li>
+<li>If <code>prefer_local_users</code> is <code>true</code>, then users local to the homeserver are
+returned first.</li>
+<li>Users with a display name set are returned first.</li>
+<li>Users with an avatar set are returned first.</li>
+</ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="message-retention-policies"><a class="header" href="#message-retention-policies">Message retention policies</a></h1>
 <p>Synapse admins can enable support for message retention policies on
 their homeserver. Message retention policies exist at a room level,
@@ -9341,8 +9764,7 @@ and allow server and room admins to configure how long messages should
 be kept in a homeserver's database before being purged from it.
 <strong>Please note that, as this feature isn't part of the Matrix
 specification yet, this implementation is to be considered as
-experimental. There are known bugs which may cause database corruption.
-Proceed with caution.</strong> </p>
+experimental.</strong></p>
 <p>A message retention policy is mainly defined by its <code>max_lifetime</code>
 parameter, which defines how long a message can be kept around after
 it was sent to the room. If a room doesn't have a message retention
@@ -10268,9 +10690,15 @@ class EventCensorer:
         return event_dict
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="presence-router-callbacks"><a class="header" href="#presence-router-callbacks">Presence router callbacks</a></h1>
-<p>Presence router callbacks allow module developers to specify additional users (local or remote)
-to receive certain presence updates from local users. Presence router callbacks can be 
-registered using the module API's <code>register_presence_router_callbacks</code> method.</p>
+<p>Presence router callbacks allow module developers to define additional users
+which receive presence updates from local users. The additional users
+can be local or remote.</p>
+<p>For example, it could be used to direct all of <code>@alice:example.com</code> (a local user)'s
+presence updates to <code>@bob:matrix.org</code> (a remote user), even though they don't share a
+room. (Note that those presence updates might not make it to <code>@bob:matrix.org</code>'s client
+unless a similar presence router is running on that homeserver.)</p>
+<p>Presence router callbacks can be registered using the module API's
+<code>register_presence_router_callbacks</code> method.</p>
 <h2 id="callbacks-2"><a class="header" href="#callbacks-2">Callbacks</a></h2>
 <p>The available presence router callbacks are:</p>
 <h3 id="get_users_for_states"><a class="header" href="#get_users_for_states"><code>get_users_for_states</code></a></h3>
@@ -10376,6 +10804,13 @@ any of the subsequent implementations of this callback.</p>
 </code></pre>
 <p>Called after successfully registering a user, in case the module needs to perform extra
 operations to keep track of them. (e.g. add them to a database table). The user is
+represented by their Matrix user ID.</p>
+<p>If multiple modules implement this callback, Synapse runs them all in order.</p>
+<h3 id="on_user_login"><a class="header" href="#on_user_login"><code>on_user_login</code></a></h3>
+<p><em>First introduced in Synapse v1.98.0</em></p>
+<pre><code class="language-python">async def on_user_login(user_id: str, auth_provider_type: str, auth_provider_id: str) -&gt; None
+</code></pre>
+<p>Called after successfully login or registration of a user for cases when module needs to perform extra operations after auth.
 represented by their Matrix user ID.</p>
 <p>If multiple modules implement this callback, Synapse runs them all in order.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="password-auth-provider-callbacks"><a class="header" href="#password-auth-provider-callbacks">Password auth provider callbacks</a></h1>
@@ -10755,6 +11190,27 @@ class CustomAccountDataModule:
             }
         )
 </code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="add-extra-fields-to-client-events-unsigned-section-callbacks"><a class="header" href="#add-extra-fields-to-client-events-unsigned-section-callbacks">Add extra fields to client events unsigned section callbacks</a></h1>
+<p><em>First introduced in Synapse v1.96.0</em></p>
+<p>This callback allows modules to add extra fields to the unsigned section of
+events when they get sent down to clients.</p>
+<p>These get called <em>every</em> time an event is to be sent to clients, so care should
+be taken to ensure with respect to performance.</p>
+<h3 id="api"><a class="header" href="#api">API</a></h3>
+<p>To register the callback, use
+<code>register_add_extra_fields_to_unsigned_client_event_callbacks</code> on the
+<code>ModuleApi</code>.</p>
+<p>The callback should be of the form</p>
+<pre><code class="language-python">async def add_field_to_unsigned(
+    event: EventBase,
+) -&gt; JsonDict:
+</code></pre>
+<p>where the extra fields to add to the event's unsigned section is returned.
+(Modules must not attempt to modify the <code>event</code> directly).</p>
+<p>This cannot be used to alter the &quot;core&quot; fields in the unsigned section emitted
+by Synapse itself.</p>
+<p>If multiple such callbacks try to add the same field to an event's unsigned
+section, the last-registered callback wins.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="porting-an-existing-module-that-uses-the-old-interface"><a class="header" href="#porting-an-existing-module-that-uses-the-old-interface">Porting an existing module that uses the old interface</a></h1>
 <p>In order to port a module that uses Synapse's old module interface, its author needs to:</p>
 <ul>
@@ -10844,9 +11300,15 @@ for the main process</li>
 <li>Secondly, you need to enable
 <a href="usage/configuration/config_documentation.html#redis">redis-based replication</a></li>
 <li>You will need to add an <a href="usage/configuration/config_documentation.html#instance_map"><code>instance_map</code></a> 
-with the <code>main</code> process defined, as well as the relevant connection information from 
-it's HTTP <code>replication</code> listener (defined in step 1 above). Note that the <code>host</code> defined 
-is the address the worker needs to look for the <code>main</code> process at, not necessarily the same address that is bound to.</li>
+with the <code>main</code> process defined, as well as the relevant connection information from
+it's HTTP <code>replication</code> listener (defined in step 1 above).
+<ul>
+<li>Note that the <code>host</code> defined is the address the worker needs to look for the <code>main</code>
+process at, not necessarily the same address that is bound to.</li>
+<li>If you are using Unix sockets for the <code>replication</code> resource, make sure to
+use a <code>path</code> to the socket file instead of a <code>port</code>.</li>
+</ul>
+</li>
 <li>Optionally, a <a href="usage/configuration/config_documentation.html#worker_replication_secret">shared secret</a>
 can be used to authenticate HTTP traffic between workers. For example:</li>
 </ul>
@@ -10919,10 +11381,10 @@ recommend the use of <code>systemd</code> where available: for information on se
 <h2 id="start-synapse-with-poetry"><a class="header" href="#start-synapse-with-poetry">Start Synapse with Poetry</a></h2>
 <p>The following applies to Synapse installations that have been installed from source using <code>poetry</code>.</p>
 <p>You can start the main Synapse process with Poetry by running the following command:</p>
-<pre><code class="language-console">poetry run synapse_homeserver -c [your homeserver.yaml]
+<pre><code class="language-console">poetry run synapse_homeserver --config-file [your homeserver.yaml]
 </code></pre>
 <p>For worker setups, you can run the following command</p>
-<pre><code class="language-console">poetry run synapse_worker -c [your worker.yaml]
+<pre><code class="language-console">poetry run synapse_worker --config-file [your homeserver.yaml] --config-file [your worker.yaml]
 </code></pre>
 <h2 id="available-worker-applications"><a class="header" href="#available-worker-applications">Available worker applications</a></h2>
 <h3 id="synapseappgeneric_worker"><a class="header" href="#synapseappgeneric_worker"><code>synapse.app.generic_worker</code></a></h3>
@@ -10984,6 +11446,7 @@ information.</p>
 ^/_matrix/client/(r0|v3|unstable)/user/.*/filter(/|$)
 ^/_matrix/client/(api/v1|r0|v3|unstable)/directory/room/.*$
 ^/_matrix/client/(r0|v3|unstable)/capabilities$
+^/_matrix/client/(r0|v3|unstable)/notifications$
 
 # Encryption requests
 ^/_matrix/client/(r0|v3|unstable)/keys/query$
@@ -11248,10 +11711,12 @@ the stream writer for the <code>presence</code> stream:</p>
 <pre><code>^/_matrix/client/(api/v1|r0|v3|unstable)/presence/
 </code></pre>
 <h4 id="restrict-outbound-federation-traffic-to-a-specific-set-of-workers"><a class="header" href="#restrict-outbound-federation-traffic-to-a-specific-set-of-workers">Restrict outbound federation traffic to a specific set of workers</a></h4>
-<p>The <code>outbound_federation_restricted_to</code> configuration is useful to make sure outbound
-federation traffic only goes through a specified subset of workers. This allows you to
-set more strict access controls (like a firewall) for all workers and only allow the
-<code>federation_sender</code>'s to contact the outside world.</p>
+<p>The
+<a href="usage/configuration/config_documentation.html#outbound_federation_restricted_to"><code>outbound_federation_restricted_to</code></a>
+configuration is useful to make sure outbound federation traffic only goes through a
+specified subset of workers. This allows you to set more strict access controls (like a
+firewall) for all workers and only allow the <code>federation_sender</code>'s to contact the
+outside world.</p>
 <pre><code class="language-yaml">instance_map:
     main:
         host: localhost
@@ -11262,6 +11727,8 @@ set more strict access controls (like a firewall) for all workers and only allow
 
 outbound_federation_restricted_to:
   - federation_sender1
+
+worker_replication_secret: &quot;secret_secret&quot;
 </code></pre>
 <h4 id="background-tasks"><a class="header" href="#background-tasks">Background tasks</a></h4>
 <p>There is also support for moving background tasks to a separate
@@ -11644,6 +12111,7 @@ information from the Admin API.</p>
 <p>For more details on access tokens in Matrix, please refer to the complete
 <a href="https://matrix.org/docs/spec/client_server/r0.6.1#using-access-tokens">matrix spec documentation</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="account-validity-api"><a class="header" href="#account-validity-api">Account validity API</a></h1>
+<p><strong>Note:</strong> This API is disabled when MSC3861 is enabled. <a href="https://github.com/matrix-org/synapse/pull/15582">See #15582</a></p>
 <p>This API allows a server administrator to manage the validity of an account. To
 use it, you must enable the account validity feature (under
 <code>account_validity</code>) in Synapse's configuration.</p>
@@ -12214,6 +12682,7 @@ a purge id:</p>
 <code>VACUUM FULL;</code> on the database.</p>
 <p><a href="https://www.postgresql.org/docs/current/sql-vacuum.html">https://www.postgresql.org/docs/current/sql-vacuum.html</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="shared-secret-registration"><a class="header" href="#shared-secret-registration">Shared-Secret Registration</a></h1>
+<p><strong>Note:</strong> This API is disabled when MSC3861 is enabled. <a href="https://github.com/matrix-org/synapse/pull/15582">See #15582</a></p>
 <p>This API allows for the creation of users in an administrative and
 non-interactive way. This is generally used for bootstrapping a Synapse
 instance with administrator accounts.</p>
@@ -12288,6 +12757,7 @@ def generate_mac(nonce, user, password, admin=False, user_type=None):
     return mac.hexdigest()
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="registration-tokens"><a class="header" href="#registration-tokens">Registration Tokens</a></h1>
+<p><strong>Note:</strong> This API is disabled when MSC3861 is enabled. <a href="https://github.com/matrix-org/synapse/pull/15582">See #15582</a></p>
 <p>This API allows you to manage tokens which can be used to authenticate
 registration requests, as proposed in
 <a href="https://github.com/matrix-org/matrix-doc/blob/main/proposals/3231-token-authenticated-registration.md">MSC3231</a>
@@ -13034,7 +13504,8 @@ given timestamp. Defaults to <code>f</code>.</li>
 </ul>
 <p><strong>Response</strong></p>
 <ul>
-<li><code>event_id</code> - converted from timestamp</li>
+<li><code>event_id</code> - The event ID closest to the given timestamp.</li>
+<li><code>origin_server_ts</code> - The timestamp of the event in milliseconds since the Unix epoch.</li>
 </ul>
 <h1 id="block-room-api"><a class="header" href="#block-room-api">Block Room API</a></h1>
 <p>The Block Room admin API allows server admins to block and unblock rooms,
@@ -13692,7 +14163,8 @@ for a server admin: see <a href="admin_api/../usage/administration/admin_api/">A
             &quot;external_id&quot;: &quot;&lt;user_id_provider_2&gt;&quot;
         }
     ],
-    &quot;user_type&quot;: null
+    &quot;user_type&quot;: null,
+    &quot;locked&quot;: false
 }
 </code></pre>
 <p>URL parameters:</p>
@@ -13733,7 +14205,8 @@ specific <code>user_id</code>.</p>
     ],
     &quot;admin&quot;: false,
     &quot;deactivated&quot;: false,
-    &quot;user_type&quot;: null
+    &quot;user_type&quot;: null,
+    &quot;locked&quot;: false
 }
 </code></pre>
 <p>Returns HTTP status code:</p>
@@ -13806,6 +14279,9 @@ Users' passwords are wiped upon account deactivation, hence the need to set a ne
 deactivating and erasing users see <a href="admin_api/user_admin_api.html#deactivate-account">Deactivate Account</a>.</p>
 </li>
 <li>
+<p><code>locked</code> - <strong>bool</strong>, optional. If unspecified, locked state will be left unchanged.</p>
+</li>
+<li>
 <p><code>user_type</code> - <strong>string</strong> or null, optional. If not provided, the user type will be
 not be changed. If <code>null</code> is given, the user type will be cleared.
 Other allowed options are: <code>bot</code> and <code>support</code>.</p>
@@ -13829,7 +14305,8 @@ By default, the response is ordered by ascending user ID.</p>
             &quot;shadow_banned&quot;: 0,
             &quot;displayname&quot;: &quot;&lt;User One&gt;&quot;,
             &quot;avatar_url&quot;: null,
-            &quot;creation_ts&quot;: 1560432668000
+            &quot;creation_ts&quot;: 1560432668000,
+            &quot;locked&quot;: false
         }, {
             &quot;name&quot;: &quot;&lt;user_id2&gt;&quot;,
             &quot;is_guest&quot;: 0,
@@ -13840,7 +14317,8 @@ By default, the response is ordered by ascending user ID.</p>
             &quot;shadow_banned&quot;: 0,
             &quot;displayname&quot;: &quot;&lt;User Two&gt;&quot;,
             &quot;avatar_url&quot;: &quot;&lt;avatar_url&gt;&quot;,
-            &quot;creation_ts&quot;: 1561550621000
+            &quot;creation_ts&quot;: 1561550621000,
+            &quot;locked&quot;: false
         }
     ],
     &quot;next_token&quot;: &quot;100&quot;,
@@ -13864,7 +14342,11 @@ that contain this value. This parameter is ignored when using the <code>name</co
 </li>
 <li>
 <p><code>guests</code> - string representing a bool - Is optional and if <code>false</code> will <strong>exclude</strong> guest users.
-Defaults to <code>true</code> to include guest users.</p>
+Defaults to <code>true</code> to include guest users. This parameter is not supported when MSC3861 is enabled. <a href="https://github.com/matrix-org/synapse/pull/15582">See #15582</a></p>
+</li>
+<li>
+<p><code>admins</code> - Optional flag to filter admins. If <code>true</code>, only admins are queried. If <code>false</code>, admins are excluded from 
+the query. When the flag is absent (the default), <strong>both</strong> admins and non-admins are included in the search results.</p>
 </li>
 <li>
 <p><code>deactivated</code> - string representing a bool - Is optional and if <code>true</code> will <strong>include</strong> deactivated users.
@@ -13894,6 +14376,7 @@ which guarantees a stable ordering. Valid values are:</p>
 <li><code>displayname</code> - Users are ordered alphabetically by <code>displayname</code>.</li>
 <li><code>avatar_url</code> - Users are ordered alphabetically by avatar URL.</li>
 <li><code>creation_ts</code> - Users are ordered by when the users was created in ms.</li>
+<li><code>last_seen_ts</code> - Users are ordered by when the user was lastly seen in ms.</li>
 </ul>
 </li>
 <li>
@@ -13904,6 +14387,10 @@ Setting this value to <code>b</code> will reverse the above sort order. Defaults
 <p><code>not_user_type</code> - Exclude certain user types, such as bot users, from the request.
 Can be provided multiple times. Possible values are <code>bot</code>, <code>support</code> or &quot;empty string&quot;.
 &quot;empty string&quot; here means to exclude users without a type.</p>
+</li>
+<li>
+<p><code>locked</code> - string representing a bool - Is optional and if <code>true</code> will <strong>include</strong> locked users.
+Defaults to <code>false</code> to exclude locked users. Note: Introduced in v1.93.</p>
 </li>
 </ul>
 <p>Caution. The database only has indexes on the columns <code>name</code> and <code>creation_ts</code>.
@@ -13928,6 +14415,8 @@ This allows user type specific behaviour. There are also types <code>support</co
 <li><code>displayname</code> - string - The user's display name if they have set one.</li>
 <li><code>avatar_url</code> - string -  The user's avatar URL if they have set one.</li>
 <li><code>creation_ts</code> - integer - The user's creation timestamp in ms.</li>
+<li><code>last_seen_ts</code> - integer - The user's last activity timestamp in ms.</li>
+<li><code>locked</code> - bool - Status if that user has been marked as locked. Note: Introduced in v1.93.</li>
 </ul>
 </li>
 <li>
@@ -13937,6 +14426,7 @@ This allows user type specific behaviour. There are also types <code>support</co
 <p><code>total</code> - integer - Total number of media.</p>
 </li>
 </ul>
+<p><em>Added in Synapse 1.93:</em> the <code>locked</code> query parameter and response field.</p>
 <h2 id="query-current-sessions-for-a-user"><a class="header" href="#query-current-sessions-for-a-user">Query current sessions for a user</a></h2>
 <p>This API returns information about the active sessions for a specific user.</p>
 <p>The endpoints are:</p>
@@ -14029,6 +14519,7 @@ is set to <code>true</code>:</p>
 <li>Remove user's consent information (consent version and timestamp)</li>
 </ul>
 <h2 id="reset-password"><a class="header" href="#reset-password">Reset password</a></h2>
+<p><strong>Note:</strong> This API is disabled when MSC3861 is enabled. <a href="https://github.com/matrix-org/synapse/pull/15582">See #15582</a></p>
 <p>Changes the password of another user. This will automatically log the user out of all their devices.</p>
 <p>The api is:</p>
 <pre><code>POST /_synapse/admin/v1/reset_password/&lt;user_id&gt;
@@ -14042,6 +14533,7 @@ is set to <code>true</code>:</p>
 <p>The parameter <code>new_password</code> is required.
 The parameter <code>logout_devices</code> is optional and defaults to <code>true</code>.</p>
 <h2 id="get-whether-a-user-is-a-server-administrator-or-not"><a class="header" href="#get-whether-a-user-is-a-server-administrator-or-not">Get whether a user is a server administrator or not</a></h2>
+<p><strong>Note:</strong> This API is disabled when MSC3861 is enabled. <a href="https://github.com/matrix-org/synapse/pull/15582">See #15582</a></p>
 <p>The api is:</p>
 <pre><code>GET /_synapse/admin/v1/users/&lt;user_id&gt;/admin
 </code></pre>
@@ -14051,6 +14543,7 @@ The parameter <code>logout_devices</code> is optional and defaults to <code>true
 }
 </code></pre>
 <h2 id="change-whether-a-user-is-a-server-administrator-or-not"><a class="header" href="#change-whether-a-user-is-a-server-administrator-or-not">Change whether a user is a server administrator or not</a></h2>
+<p><strong>Note:</strong> This API is disabled when MSC3861 is enabled. <a href="https://github.com/matrix-org/synapse/pull/15582">See #15582</a></p>
 <p>Note that you cannot demote yourself.</p>
 <p>The api is:</p>
 <pre><code>PUT /_synapse/admin/v1/users/&lt;user_id&gt;/admin
@@ -14192,6 +14685,16 @@ The newest media is on top. You can change the order with parameters
       &quot;quarantined_by&quot;: null,
       &quot;safe_from_quarantine&quot;: false,
       &quot;upload_name&quot;: &quot;test2.png&quot;
+    },
+    {
+      &quot;created_ts&quot;: 300400,
+      &quot;last_access_ts&quot;: 300700,
+      &quot;media_id&quot;: &quot;BzYNLRUgGHphBkdKGbzXwbjX&quot;,
+      &quot;media_length&quot;: 1337,
+      &quot;media_type&quot;: &quot;application/octet-stream&quot;,
+      &quot;quarantined_by&quot;: null,
+      &quot;safe_from_quarantine&quot;: false,
+      &quot;upload_name&quot;: null
     }
   ],
   &quot;next_token&quot;: 3,
@@ -14257,16 +14760,17 @@ database, especially for large environments.</p>
 Media objects contain the following fields:
 <ul>
 <li><code>created_ts</code> - integer - Timestamp when the content was uploaded in ms.</li>
-<li><code>last_access_ts</code> - integer - Timestamp when the content was last accessed in ms.</li>
+<li><code>last_access_ts</code> - integer or null - Timestamp when the content was last accessed in ms.
+Null if there was no access, yet.</li>
 <li><code>media_id</code> - string - The id used to refer to the media. Details about the format
 are documented under
 <a href="admin_api/../media_repository.html">media repository</a>.</li>
 <li><code>media_length</code> - integer - Length of the media in bytes.</li>
 <li><code>media_type</code> - string - The MIME-type of the media.</li>
-<li><code>quarantined_by</code> - string - The user ID that initiated the quarantine request
-for this media.</li>
+<li><code>quarantined_by</code> - string or null - The user ID that initiated the quarantine request
+for this media. Null if not quarantined.</li>
 <li><code>safe_from_quarantine</code> - bool - Status if this media is safe from quarantining.</li>
-<li><code>upload_name</code> - string - The name the media was uploaded with.</li>
+<li><code>upload_name</code> - string or null - The name the media was uploaded with. Null if not provided during upload.</li>
 </ul>
 </li>
 <li><code>next_token</code>: integer - Indication for pagination. See above.</li>
@@ -14304,6 +14808,7 @@ after deleting media the remaining media have a new order.</p>
 With the parameters you can for example limit the number of files to delete at once or
 delete largest/smallest or newest/oldest files first.</p>
 <h2 id="login-as-a-user"><a class="header" href="#login-as-a-user">Login as a user</a></h2>
+<p><strong>Note:</strong> This API is disabled when MSC3861 is enabled. <a href="https://github.com/matrix-org/synapse/pull/15582">See #15582</a></p>
 <p>Get an access token that can be used to authenticate as that user. Useful for
 when admins wish to do actions on behalf of a user.</p>
 <p>The API is:</p>
@@ -14312,7 +14817,8 @@ when admins wish to do actions on behalf of a user.</p>
 </code></pre>
 <p>An optional <code>valid_until_ms</code> field can be specified in the request body as an
 integer timestamp that specifies when the token should expire. By default tokens
-do not expire.</p>
+do not expire. Note that this API does not allow a user to login as themselves
+(to create more tokens).</p>
 <p>A response body like the following is returned:</p>
 <pre><code class="language-json">{
     &quot;access_token&quot;: &quot;&lt;opaque_access_token_string&gt;&quot;
@@ -14325,6 +14831,33 @@ tell they have been logged in as.</p>
 <p>Note: The token will expire if the <em>admin</em> user calls <code>/logout/all</code> from any
 of their devices, but the token will <em>not</em> expire if the target user does the
 same.</p>
+<h2 id="allow-replacing-master-cross-signing-key-without-user-interactive-auth"><a class="header" href="#allow-replacing-master-cross-signing-key-without-user-interactive-auth">Allow replacing master cross-signing key without User-Interactive Auth</a></h2>
+<p>This endpoint is not intended for server administrator usage;
+we describe it here for completeness.</p>
+<p>This API temporarily permits a user to replace their master cross-signing key
+without going through
+<a href="https://spec.matrix.org/v1.8/client-server-api/#user-interactive-authentication-api">user-interactive authentication</a> (UIA).
+This is useful when Synapse has delegated its authentication to the
+<a href="https://github.com/matrix-org/matrix-authentication-service/">Matrix Authentication Service</a>;
+as Synapse cannot perform UIA is not possible in these circumstances.</p>
+<p>The API is</p>
+<pre><code class="language-http request">POST /_synapse/admin/v1/users/&lt;user_id&gt;/_allow_cross_signing_replacement_without_uia
+{}
+</code></pre>
+<p>If the user does not exist, or does exist but has no master cross-signing key,
+this will return with status code <code>404 Not Found</code>.</p>
+<p>Otherwise, a response body like the following is returned, with status <code>200 OK</code>:</p>
+<pre><code class="language-json">{
+    &quot;updatable_without_uia_before_ms&quot;: 1234567890
+}
+</code></pre>
+<p>The response body is a JSON object with a single field:</p>
+<ul>
+<li><code>updatable_without_uia_before_ms</code>: integer. The timestamp in milliseconds
+before which the user is permitted to replace their cross-signing key without
+going through UIA.</li>
+</ul>
+<p><em>Added in Synapse 1.97.0.</em></p>
 <h2 id="user-devices"><a class="header" href="#user-devices">User devices</a></h2>
 <h3 id="list-all-devices"><a class="header" href="#list-all-devices">List all devices</a></h3>
 <p>Gets information about all devices for a specific <code>user_id</code>.</p>
@@ -14744,8 +15277,8 @@ for more information.</p>
 </code></pre>
 <p><em>Added in Synapse 1.72.0.</em></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="version-api"><a class="header" href="#version-api">Version API</a></h1>
-<p>This API returns the running Synapse version and the Python version
-on which Synapse is being run. This is useful when a Synapse instance
+<p>This API returns the running Synapse version.
+This is useful when a Synapse instance
 is behind a proxy that does not forward the 'Server' header (which also
 contains Synapse version information).</p>
 <p>The api is:</p>
@@ -14753,10 +15286,11 @@ contains Synapse version information).</p>
 </code></pre>
 <p>It returns a JSON body like the following:</p>
 <pre><code class="language-json">{
-    &quot;server_version&quot;: &quot;0.99.2rc1 (b=develop, abcdef123)&quot;,
-    &quot;python_version&quot;: &quot;3.7.8&quot;
+    &quot;server_version&quot;: &quot;0.99.2rc1 (b=develop, abcdef123)&quot;
 }
 </code></pre>
+<p><em>Changed in Synapse 1.94.0:</em> The <code>python_version</code> key was removed from the
+response body.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="federation-api"><a class="header" href="#federation-api">Federation API</a></h1>
 <p>This API allows a server administrator to manage Synapse's federation with other homeservers.</p>
 <p>Note: This API is new, experimental and &quot;subject to change&quot;.</p>
@@ -14822,7 +15356,7 @@ Destination objects contain the following fields:
 remote server, in ms. This is <code>0</code> if the last attempt to communicate with the
 remote server was successful.</li>
 <li><code>retry_interval</code> - integer - How long since the last time Synapse tried to reach
-the remote server before trying again, in ms. This is <code>0</code> if no further retrying occuring.</li>
+the remote server before trying again, in ms. This is <code>0</code> if no further retrying occurring.</li>
 <li><code>failure_ts</code> - nullable integer - The first time Synapse tried and failed to reach the
 remote server, in ms. This is <code>null</code> if communication with the remote server has never failed.</li>
 <li><code>last_successful_stream_ordering</code> - nullable integer - The stream ordering of the most
@@ -15614,7 +16148,7 @@ WHERE room_stats_state.room_id = event_json.room_id&quot; | psql -d synapse -h l
     rsc.joined_members, rsc.local_users_in_room, rss.join_rules
   FROM room_stats_state rss
   LEFT JOIN room_stats_current rsc USING (room_id)
-  WHERE room_id IN ( WHERE room_id IN (
+  WHERE room_id IN (
     '!OGEhHVWSdvArJzumhm:matrix.org',
     '!YTvKGNlinIzlkMTVRl:matrix.org' 
   );
@@ -15936,7 +16470,7 @@ source, you should install <code>poetry</code>.
 Of their installation methods, we recommend
 <a href="https://python-poetry.org/docs/#installing-with-pipx">installing <code>poetry</code> using <code>pipx</code></a>,</p>
 <pre><code class="language-shell">pip install --user pipx
-pipx install poetry
+pipx install poetry==1.5.1  # Problems with Poetry 1.6, see https://github.com/matrix-org/synapse/issues/16147
 </code></pre>
 <p>but see poetry's <a href="https://python-poetry.org/docs/#installation">installation instructions</a>
 for other installation methods.</p>
@@ -16064,7 +16598,7 @@ useful to reproduce this locally.</p>
 <h4 id="using-docker"><a class="header" href="#using-docker">Using Docker</a></h4>
 <p>The easiest way to do so is to run Postgres via a docker container. In one
 terminal:</p>
-<pre><code class="language-shell">docker run --rm -e POSTGRES_PASSWORD=mysecretpassword -e POSTGRES_USER=postgres -e POSTGRES_DB=postgress -p 5432:5432 postgres:14
+<pre><code class="language-shell">docker run --rm -e POSTGRES_PASSWORD=mysecretpassword -e POSTGRES_USER=postgres -e POSTGRES_DB=postgres -p 5432:5432 postgres:14
 </code></pre>
 <p>If you see an error like</p>
 <pre><code>docker: Error response from daemon: driver failed programming external connectivity on endpoint nice_ride (b57bbe2e251b70015518d00c9981e8cb8346b5c785250341a6c53e3c899875f1): Error starting userland proxy: listen tcp4 0.0.0.0:5432: bind: address already in use.
@@ -16102,7 +16636,7 @@ anything was broken. They are slower than the unit tests but will
 typically catch more errors.</p>
 <p>The following command will let you run the integration test with the most common
 configuration:</p>
-<pre><code class="language-sh">$ docker run --rm -it -v /path/where/you/have/cloned/the/repository\:/src:ro -v /path/to/where/you/want/logs\:/logs matrixdotorg/sytest-synapse:buster
+<pre><code class="language-sh">$ docker run --rm -it -v /path/where/you/have/cloned/the/repository\:/src:ro -v /path/to/where/you/want/logs\:/logs matrixdotorg/sytest-synapse:focal
 </code></pre>
 <p>(Note that the paths must be full paths! You could also write <code>$(realpath relative/path)</code> if needed.)</p>
 <p>This configuration should generally cover your needs.</p>
@@ -16139,6 +16673,7 @@ See the <a href="development/../workers.html">worker documentation</a> for addit
 </li>
 <li>Passing <code>ASYNCIO_REACTOR=1</code> as an environment variable to use the Twisted asyncio reactor instead of the default one.</li>
 <li>Passing <code>PODMAN=1</code> will use the <a href="https://podman.io/">podman</a> container runtime, instead of docker.</li>
+<li>Passing <code>UNIX_SOCKETS=1</code> will utilise Unix socket functionality for Synapse, Redis, and Postgres(when applicable).</li>
 </ul>
 <p>To increase the log level for the tests, set <code>SYNAPSE_TEST_LOG_LEVEL</code>, e.g:</p>
 <pre><code class="language-sh">SYNAPSE_TEST_LOG_LEVEL=DEBUG COMPLEMENT_DIR=../complement ./scripts-dev/complement.sh -run TestImportHistoricalMessages
@@ -16509,7 +17044,7 @@ occurring on Tuesdays:</p>
 <p>Note that this schedule might be modified depending on the availability of the
 Synapse team, e.g. releases may be skipped to avoid holidays.</p>
 <p>Release announcements can be found in the
-<a href="https://matrix.org/blog/category/releases">release category of the Matrix blog</a>.</p>
+<a href="https://matrix.org/category/releases">release category of the Matrix blog</a>.</p>
 <h2 id="bugfix-releases"><a class="header" href="#bugfix-releases">Bugfix releases</a></h2>
 <p>If a bug is found after release that is deemed severe enough (by a combination
 of the impacted users and the impact on those users) then a bugfix release may
@@ -16526,7 +17061,7 @@ immediately before the next release candidate. An example of this might be:</p>
 be held to be released together.</p>
 <p>In some cases, a pre-disclosure of a security release will be issued as a notice
 to Synapse operators that there is an upcoming security release. These can be
-found in the <a href="https://matrix.org/blog/category/security">security category of the Matrix blog</a>.</p>
+found in the <a href="https://matrix.org/category/security">security category of the Matrix blog</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="some-notes-on-how-we-use-git"><a class="header" href="#some-notes-on-how-we-use-git">Some notes on how we use git</a></h1>
 <h2 id="on-keeping-the-commit-history-clean"><a class="header" href="#on-keeping-the-commit-history-clean">On keeping the commit history clean</a></h2>
 <p>In an ideal world, our git commit history would be a linear progression of
@@ -16724,6 +17259,10 @@ using docker like so:</p>
   -p 14268:14268 \
   jaegertracing/all-in-one:1
 </code></pre>
+<p>By default, Synapse will publish traces to Jaeger on localhost.
+If Jaeger is hosted elsewhere, point Synapse to the correct host by setting
+<code>opentracing.jaeger_config.local_agent.reporting_host</code> <a href="usage/configuration/config_documentation.html#opentracing-1">in the Synapse configuration</a>
+or by setting the <code>JAEGER_AGENT_HOST</code> environment variable to the desired address.</p>
 <p>Latest documentation is probably at
 https://www.jaegertracing.io/docs/latest/getting-started.</p>
 <h2 id="enable-opentracing-in-synapse"><a class="header" href="#enable-opentracing-in-synapse">Enable OpenTracing in Synapse</a></h2>
@@ -16883,6 +17422,55 @@ def run_upgrade(
     &quot;&quot;&quot;Called whenever an existing database is to be upgraded.&quot;&quot;&quot;
     ...
 </code></pre>
+<h2 id="background-updates-1"><a class="header" href="#background-updates-1">Background updates</a></h2>
+<p>It is sometimes appropriate to perform database migrations as part of a background
+process (instead of blocking Synapse until the migration is done). In particular,
+this is useful for migrating data when adding new columns or tables.</p>
+<p>Pending background updates stored in the <code>background_updates</code> table and are denoted
+by a unique name, the current status (stored in JSON), and some dependency information:</p>
+<ul>
+<li>Whether the update requires a previous update to be complete.</li>
+<li>A rough ordering for which to complete updates.</li>
+</ul>
+<p>A new background updates needs to be added to the <code>background_updates</code> table:</p>
+<pre><code class="language-sql">INSERT INTO background_updates (ordering, update_name, depends_on, progress_json) VALUES
+  (7706, 'my_background_update', 'a_previous_background_update' '{}');
+</code></pre>
+<p>And then needs an associated handler in the appropriate datastore:</p>
+<pre><code class="language-python">self.db_pool.updates.register_background_update_handler(
+    &quot;my_background_update&quot;,
+    update_handler=self._my_background_update,
+)
+</code></pre>
+<p>There are a few types of updates that can be performed, see the <code>BackgroundUpdater</code>:</p>
+<ul>
+<li><code>register_background_update_handler</code>: A generic handler for custom SQL</li>
+<li><code>register_background_index_update</code>: Create an index in the background</li>
+<li><code>register_background_validate_constraint</code>: Validate a constraint in the background
+(PostgreSQL-only)</li>
+<li><code>register_background_validate_constraint_and_delete_rows</code>: Similar to
+<code>register_background_validate_constraint</code>, but deletes rows which don't fit
+the constraint.</li>
+</ul>
+<p>For <code>register_background_update_handler</code>, the generic handler must track progress
+and then finalize the background update:</p>
+<pre><code class="language-python">async def _my_background_update(self, progress: JsonDict, batch_size: int) -&gt; int:
+    def _do_something(txn: LoggingTransaction) -&gt; int:
+        ...
+        self.db_pool.updates._background_update_progress_txn(
+            txn, &quot;my_background_update&quot;, {&quot;last_processed&quot;: last_processed}
+        )
+        return last_processed - prev_last_processed
+
+    num_processed = await self.db_pool.runInteraction(&quot;_do_something&quot;, _do_something)
+    await self.db_pool.updates._end_background_update(&quot;my_background_update&quot;)
+
+    return num_processed
+</code></pre>
+<p>Synapse will attempt to rate-limit how often background updates are run via the
+given batch-size and the returned number of processed entries (and how long the
+function took to run). See
+<a href="development/../modules/background_update_controller_callbacks.html">background update controller callbacks</a>.</p>
 <h2 id="boolean-columns"><a class="header" href="#boolean-columns">Boolean columns</a></h2>
 <p>Boolean columns require special treatment, since SQLite treats booleans the
 same as integers.</p>
@@ -16906,6 +17494,140 @@ purged (no need to use sub-<code>select</code> query or join from the <code>even
 two events with the same <code>event_id</code> (in the same or different rooms). After room
 version <code>3</code>, that can only happen with a hash collision, which we basically hope
 will never happen (SHA256 has a massive big key space).</p>
+<h2 id="worked-examples-of-gradual-migrations"><a class="header" href="#worked-examples-of-gradual-migrations">Worked examples of gradual migrations</a></h2>
+<p>Some migrations need to be performed gradually. A prime example of this is anything
+which would need to do a large table scan — including adding columns, indices or
+<code>NOT NULL</code> constraints to non-empty tables — such a migration should be done as a
+background update where possible, at least on Postgres.
+We can afford to be more relaxed about SQLite databases since they are usually
+used on smaller deployments and SQLite does not support the same concurrent
+DDL operations as Postgres.</p>
+<p>We also typically insist on having at least one Synapse version's worth of
+backwards compatibility, so that administrators can roll back Synapse if an upgrade
+did not go smoothly.</p>
+<p>This sometimes results in having to plan a migration across multiple versions
+of Synapse.</p>
+<p>This section includes an example and may include more in the future.</p>
+<h3 id="transforming-a-column-into-another-one-with-not-null-constraints"><a class="header" href="#transforming-a-column-into-another-one-with-not-null-constraints">Transforming a column into another one, with <code>NOT NULL</code> constraints</a></h3>
+<p>This example illustrates how you would introduce a new column, write data into it
+based on data from an old column and then drop the old column.</p>
+<p>We are aiming for semantic equivalence to:</p>
+<pre><code class="language-sql">ALTER TABLE mytable ADD COLUMN new_column INTEGER;
+UPDATE mytable SET new_column = old_column * 100;
+ALTER TABLE mytable ALTER COLUMN new_column ADD CONSTRAINT NOT NULL;
+ALTER TABLE mytable DROP COLUMN old_column;
+</code></pre>
+<h4 id="synapse-version-n"><a class="header" href="#synapse-version-n">Synapse version <code>N</code></a></h4>
+<pre><code class="language-python">SCHEMA_VERSION = S
+SCHEMA_COMPAT_VERSION = ... # unimportant at this stage
+</code></pre>
+<p><strong>Invariants:</strong></p>
+<ol>
+<li><code>old_column</code> is read by Synapse and written to by Synapse.</li>
+</ol>
+<h4 id="synapse-version-n--1"><a class="header" href="#synapse-version-n--1">Synapse version <code>N + 1</code></a></h4>
+<pre><code class="language-python">SCHEMA_VERSION = S + 1
+SCHEMA_COMPAT_VERSION = ... # unimportant at this stage
+</code></pre>
+<p><strong>Changes:</strong></p>
+<ol>
+<li>
+<pre><code class="language-sql">ALTER TABLE mytable ADD COLUMN new_column INTEGER;
+</code></pre>
+</li>
+</ol>
+<p><strong>Invariants:</strong></p>
+<ol>
+<li><code>old_column</code> is read by Synapse and written to by Synapse.</li>
+<li><code>new_column</code> is written to by Synapse.</li>
+</ol>
+<p><strong>Notes:</strong></p>
+<ol>
+<li><code>new_column</code> can't have a <code>NOT NULL NOT VALID</code> constraint yet, because the previous Synapse version did not write to the new column (since we haven't bumped the <code>SCHEMA_COMPAT_VERSION</code> yet, we still need to be compatible with the previous version).</li>
+</ol>
+<h4 id="synapse-version-n--2"><a class="header" href="#synapse-version-n--2">Synapse version <code>N + 2</code></a></h4>
+<pre><code class="language-python">SCHEMA_VERSION = S + 2
+SCHEMA_COMPAT_VERSION = S + 1 # this signals that we can't roll back to a time before new_column existed
+</code></pre>
+<p><strong>Changes:</strong></p>
+<ol>
+<li>On Postgres, add a <code>NOT VALID</code> constraint to ensure new rows are compliant. <em>SQLite does not have such a construct, but it would be unnecessary anyway since there is no way to concurrently perform this migration on SQLite.</em>
+<pre><code class="language-sql">ALTER TABLE mytable ADD CONSTRAINT CHECK new_column_not_null (new_column IS NOT NULL) NOT VALID;
+</code></pre>
+</li>
+<li>Start a background update to perform migration: it should gradually run e.g.
+<pre><code class="language-sql">UPDATE mytable SET new_column = old_column * 100 WHERE 0 &lt; mytable_id AND mytable_id &lt;= 5;
+</code></pre>
+This background update is technically pointless on SQLite, but you must schedule it anyway so that the <code>portdb</code> script to migrate to Postgres still works.</li>
+<li>Upon completion of the background update, you should run <code>VALIDATE CONSTRAINT</code> on Postgres to turn the <code>NOT VALID</code> constraint into a valid one.
+<pre><code class="language-sql">ALTER TABLE mytable VALIDATE CONSTRAINT new_column_not_null;
+</code></pre>
+This will take some time but does <strong>NOT</strong> hold an exclusive lock over the table.</li>
+</ol>
+<p><strong>Invariants:</strong></p>
+<ol>
+<li><code>old_column</code> is read by Synapse and written to by Synapse.</li>
+<li><code>new_column</code> is written to by Synapse and new rows always have a non-<code>NULL</code> value in this field.</li>
+</ol>
+<p><strong>Notes:</strong></p>
+<ol>
+<li>If you wish, you can convert the <code>CHECK (new_column IS NOT NULL)</code> to a <code>NOT NULL</code> constraint free of charge in Postgres by adding the <code>NOT NULL</code> constraint and then dropping the <code>CHECK</code> constraint, because Postgres can statically verify that the <code>NOT NULL</code> constraint is implied by the <code>CHECK</code> constraint without performing a table scan.</li>
+<li>It might be tempting to make version <code>N + 2</code> redundant by moving the background update to <code>N + 1</code> and delaying adding the <code>NOT NULL</code> constraint to <code>N + 3</code>, but that would mean the constraint would always be validated in the foreground in <code>N + 3</code>. Whereas if the <code>N + 2</code> step is kept, the migration in <code>N + 3</code> would be fast in the happy case.</li>
+</ol>
+<h4 id="synapse-version-n--3"><a class="header" href="#synapse-version-n--3">Synapse version <code>N + 3</code></a></h4>
+<pre><code class="language-python">SCHEMA_VERSION = S + 3
+SCHEMA_COMPAT_VERSION = S + 1 # we can't roll back to a time before new_column existed
+</code></pre>
+<p><strong>Changes:</strong></p>
+<ol>
+<li>(Postgres) Update the table to populate values of <code>new_column</code> in case the background update had not completed. Additionally, <code>VALIDATE CONSTRAINT</code> to make the check fully valid.
+<pre><code class="language-sql">-- you ideally want an index on `new_column` or e.g. `(new_column) WHERE new_column IS NULL` first, or perhaps you can find a way to skip this if the `NOT NULL` constraint has already been validated.
+UPDATE mytable SET new_column = old_column * 100 WHERE new_column IS NULL;
+
+-- this is a no-op if it already ran as part of the background update
+ALTER TABLE mytable VALIDATE CONSTRAINT new_column_not_null;
+</code></pre>
+</li>
+<li>(SQLite) Recreate the table by precisely following <a href="https://www.sqlite.org/lang_altertable.html#otheralter">the 12-step procedure for SQLite table schema changes</a>.
+During this table rewrite, you should recreate <code>new_column</code> as <code>NOT NULL</code> and populate any outstanding <code>NULL</code> values at the same time.
+Unfortunately, you can't drop <code>old_column</code> yet because it must be present for compatibility with the Postgres schema, as needed by <code>portdb</code>.
+(Otherwise you could do this all in one go with SQLite!)</li>
+</ol>
+<p><strong>Invariants:</strong></p>
+<ol>
+<li><code>old_column</code> is written to by Synapse (but no longer read by Synapse!).</li>
+<li><code>new_column</code> is read by Synapse and written to by Synapse. Moreover, all rows have a non-<code>NULL</code> value in this field, as guaranteed by a schema constraint.</li>
+</ol>
+<p><strong>Notes:</strong></p>
+<ol>
+<li>We can't drop <code>old_column</code> yet, or even stop writing to it, because that would break a rollback to the previous version of Synapse.</li>
+<li>Application code can now rely on <code>new_column</code> being populated. The remaining steps are only motivated by the wish to clean-up old columns.</li>
+</ol>
+<h4 id="synapse-version-n--4"><a class="header" href="#synapse-version-n--4">Synapse version <code>N + 4</code></a></h4>
+<pre><code class="language-python">SCHEMA_VERSION = S + 4
+SCHEMA_COMPAT_VERSION = S + 3 # we can't roll back to a time before new_column was entirely non-NULL
+</code></pre>
+<p><strong>Invariants:</strong></p>
+<ol>
+<li><code>old_column</code> exists but is not written to or read from by Synapse.</li>
+<li><code>new_column</code> is read by Synapse and written to by Synapse. Moreover, all rows have a non-<code>NULL</code> value in this field, as guaranteed by a schema constraint.</li>
+</ol>
+<p><strong>Notes:</strong></p>
+<ol>
+<li>We can't drop <code>old_column</code> yet because that would break a rollback to the previous version of Synapse. <br />
+<strong>TODO:</strong> It may be possible to relax this and drop the column straight away as long as the previous version of Synapse detected a rollback occurred and stopped attempting to write to the column. This could possibly be done by checking whether the database's schema compatibility version was <code>S + 3</code>.</li>
+</ol>
+<h4 id="synapse-version-n--5"><a class="header" href="#synapse-version-n--5">Synapse version <code>N + 5</code></a></h4>
+<pre><code class="language-python">SCHEMA_VERSION = S + 5
+SCHEMA_COMPAT_VERSION = S + 4 # we can't roll back to a time before old_column was no longer being touched
+</code></pre>
+<p><strong>Changes:</strong></p>
+<ol>
+<li>
+<pre><code class="language-sql">ALTER TABLE mytable DROP COLUMN old_column;
+</code></pre>
+</li>
+</ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="implementing-experimental-features-in-synapse"><a class="header" href="#implementing-experimental-features-in-synapse">Implementing experimental features in Synapse</a></h1>
 <p>It can be desirable to implement &quot;experimental&quot; features which are disabled by
 default and must be explicitly enabled via the Synapse configuration. This is
@@ -17572,7 +18294,7 @@ blocking operation, and returns an awaitable:</p>
 <p>So we have stopped processing the request (and will probably go on to
 start processing the next), without clearing the logcontext.</p>
 <p>To circumvent this problem, synapse code assumes that, wherever you have
-an awaitable, you will want to <code>await</code> it. To that end, whereever
+an awaitable, you will want to <code>await</code> it. To that end, wherever
 functions return awaitables, we adopt the following conventions:</p>
 <p><strong>Rules for functions returning awaitables:</strong></p>
 <blockquote>
@@ -17827,6 +18549,139 @@ minimal.</p>
 <p>Information about how the tcp replication module is structured, including how
 the classes interact, can be found in
 <code>synapse/replication/tcp/__init__.py</code></p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="streams"><a class="header" href="#streams">Streams</a></h2>
+<p>Synapse has a concept of &quot;streams&quot;, which are roughly described in <a href="https://github.com/matrix-org/synapse/blob/develop/synapse/storage/util/id_generators.py"><code>id_generators.py</code></a>.
+Generally speaking, streams are a series of notifications that something in Synapse's database has changed that the application might need to respond to.
+For example:</p>
+<ul>
+<li>The events stream reports new events (PDUs) that Synapse creates, or that Synapse accepts from another homeserver.</li>
+<li>The account data stream reports changes to users' <a href="https://spec.matrix.org/v1.7/client-server-api/#client-config">account data</a>.</li>
+<li>The to-device stream reports when a device has a new <a href="https://spec.matrix.org/v1.7/client-server-api/#send-to-device-messaging">to-device message</a>.</li>
+</ul>
+<p>See <a href="https://github.com/matrix-org/synapse/blob/develop/synapse/replication/tcp/streams/__init__.py"><code>synapse.replication.tcp.streams</code></a> for the full list of streams.</p>
+<p>It is very helpful to understand the streams mechanism when working on any part of Synapse that needs to respond to changes—especially if those changes are made by different workers.
+To that end, let's describe streams formally, paraphrasing from the docstring of <a href="https://github.com/matrix-org/synapse/blob/a719b703d9bd0dade2565ddcad0e2f3a7a9d4c37/synapse/storage/util/id_generators.py#L96"><code>AbstractStreamIdGenerator</code></a>.</p>
+<h3 id="definition"><a class="header" href="#definition">Definition</a></h3>
+<p>A stream is an append-only log <code>T1, T2, ..., Tn, ...</code> of facts<sup class="footnote-reference"><a href="#1">1</a></sup> which grows over time.
+Only &quot;writers&quot; can add facts to a stream, and there may be multiple writers.</p>
+<p>Each fact has an ID, called its &quot;stream ID&quot;.
+Readers should only process facts in ascending stream ID order.</p>
+<p>Roughly speaking, each stream is backed by a database table.
+It should have a <code>stream_id</code> (or similar) bigint column holding stream IDs, plus additional columns as necessary to describe the fact.
+Typically, a fact is expressed with a single row in its backing table.<sup class="footnote-reference"><a href="#2">2</a></sup>
+Within a stream, no two facts may have the same stream_id.</p>
+<blockquote>
+<p><em>Aside</em>. Some additional notes on streams' backing tables.</p>
+<ol>
+<li>Rich would like to <a href="https://github.com/matrix-org/synapse/issues/13456">ditch the backing tables</a>.</li>
+<li>The backing tables may have other uses.
+&gt;    For example, the events table serves backs the events stream, and is read when processing new events.
+&gt;    But old rows are read from the table all the time, whenever Synapse needs to lookup some facts about an event.</li>
+<li>Rich suspects that sometimes the stream is backed by multiple tables, so the stream proper is the union of those tables.</li>
+</ol>
+</blockquote>
+<p>Stream writers can &quot;reserve&quot; a stream ID, and then later mark it as having being completed.
+Stream writers need to track the completion of each stream fact.
+In the happy case, completion means a fact has been written to the stream table.
+But unhappy cases (e.g. transaction rollback due to an error) also count as completion.
+Once completed, the rows written with that stream ID are fixed, and no new rows
+will be inserted with that ID.</p>
+<h3 id="current-stream-id"><a class="header" href="#current-stream-id">Current stream ID</a></h3>
+<p>For any given stream reader (including writers themselves), we may define a per-writer current stream ID:</p>
+<blockquote>
+<p>A current stream ID <em>for a writer W</em> is the largest stream ID such that
+all transactions added by W with equal or smaller ID have completed.</p>
+</blockquote>
+<p>Similarly, there is a &quot;linear&quot; notion of current stream ID:</p>
+<blockquote>
+<p>A &quot;linear&quot; current stream ID is the largest stream ID such that
+all facts (added by any writer) with equal or smaller ID have completed.</p>
+</blockquote>
+<p>Because different stream readers A and B learn about new facts at different times, A and B may disagree about current stream IDs.
+Put differently: we should think of stream readers as being independent of each other, proceeding through a stream of facts at different rates.</p>
+<p>The above definition does not give a unique current stream ID, in fact there can
+be a range of current stream IDs. Synapse uses both the minimum and maximum IDs
+for different purposes. Most often the maximum is used, as its generally
+beneficial for workers to advance their IDs as soon as possible. However, the
+minimum is used in situations where e.g. another worker is going to wait until
+the stream advances past a position.</p>
+<p><strong>NB.</strong> For both senses of &quot;current&quot;, that if a writer opens a transaction that never completes, the current stream ID will never advance beyond that writer's last written stream ID.</p>
+<p>For single-writer streams, the per-writer current ID and the linear current ID are the same.
+Both senses of current ID are monotonic, but they may &quot;skip&quot; or jump over IDs because facts complete out of order.</p>
+<p><em>Example</em>.
+Consider a single-writer stream which is initially at ID 1.</p>
+<table><thead><tr><th>Action</th><th>Current stream ID</th><th>Notes</th></tr></thead><tbody>
+<tr><td></td><td>1</td><td></td></tr>
+<tr><td>Reserve 2</td><td>1</td><td></td></tr>
+<tr><td>Reserve 3</td><td>1</td><td></td></tr>
+<tr><td>Complete 3</td><td>1</td><td>current ID unchanged, waiting for 2 to complete</td></tr>
+<tr><td>Complete 2</td><td>3</td><td>current ID jumps from 1 -&gt; 3</td></tr>
+<tr><td>Reserve 4</td><td>3</td><td></td></tr>
+<tr><td>Reserve 5</td><td>3</td><td></td></tr>
+<tr><td>Reserve 6</td><td>3</td><td></td></tr>
+<tr><td>Complete 5</td><td>3</td><td></td></tr>
+<tr><td>Complete 4</td><td>5</td><td>current ID jumps 3-&gt;5, even though 6 is pending</td></tr>
+<tr><td>Complete 6</td><td>6</td><td></td></tr>
+</tbody></table>
+<h3 id="multi-writer-streams"><a class="header" href="#multi-writer-streams">Multi-writer streams</a></h3>
+<p>There are two ways to view a multi-writer stream.</p>
+<ol>
+<li>Treat it as a collection of distinct single-writer streams, one
+for each writer.</li>
+<li>Treat it as a single stream.</li>
+</ol>
+<p>The single stream (option 2) is conceptually simpler, and easier to represent (a single stream id).
+However, it requires each reader to know about the entire set of writers, to ensures that readers don't erroneously advance their current stream position too early and miss a fact from an unknown writer.
+In contrast, multiple parallel streams (option 1) are more complex, requiring more state to represent (map from writer to stream id).
+The payoff for doing so is that readers can &quot;peek&quot; ahead to facts that completed on one writer no matter the state of the others, reducing latency.</p>
+<p>Note that a multi-writer stream can be viewed in both ways.
+For example, the events stream is treated as multiple single-writer streams (option 1) by the sync handler, so that events are sent to clients as soon as possible.
+But the background process that works through events treats them as a single linear stream.</p>
+<p>Another useful example is the cache invalidation stream.
+The facts this stream holds are instructions to &quot;you should now invalidate these cache entries&quot;.
+We only ever treat this as a multiple single-writer streams as there is no important ordering between cache invalidations.
+(Invalidations are self-contained facts; and the invalidations commute/are idempotent).</p>
+<h3 id="writing-to-streams"><a class="header" href="#writing-to-streams">Writing to streams</a></h3>
+<p>Writers need to track:</p>
+<ul>
+<li>track their current position (i.e. its own per-writer stream ID).</li>
+<li>their facts currently awaiting completion.</li>
+</ul>
+<p>At startup,</p>
+<ul>
+<li>the current position of that writer can be found by querying the database (which suggests that facts need to be written to the database atomically, in a transaction); and</li>
+<li>there are no facts awaiting completion.</li>
+</ul>
+<p>To reserve a stream ID, call <a href="https://www.postgresql.org/docs/current/functions-sequence.html"><code>nextval</code></a> on the appropriate postgres sequence.</p>
+<p>To write a fact to the stream: insert the appropriate rows to the appropriate backing table.</p>
+<p>To complete a fact, first remove it from your map of facts currently awaiting completion.
+Then, if no earlier fact is awaiting completion, the writer can advance its current position in that stream.
+Upon doing so it should emit an <code>RDATA</code> message<sup class="footnote-reference"><a href="#3">3</a></sup>, once for every fact between the old and the new stream ID.</p>
+<h3 id="subscribing-to-streams"><a class="header" href="#subscribing-to-streams">Subscribing to streams</a></h3>
+<p>Readers need to track the current position of every writer.</p>
+<p>At startup, they can find this by contacting each writer with a <code>REPLICATE</code> message,
+requesting that all writers reply describing their current position in their streams.
+Writers reply with a <code>POSITION</code> message.</p>
+<p>To learn about new facts, readers should listen for <code>RDATA</code> messages and process them to respond to the new fact.
+The <code>RDATA</code> itself is not a self-contained representation of the fact;
+readers will have to query the stream tables for the full details.
+Readers must also advance their record of the writer's current position for that stream.</p>
+<h1 id="summary"><a class="header" href="#summary">Summary</a></h1>
+<p>In a nutshell: we have an append-only log with a &quot;buffer/scratchpad&quot; at the end where we have to wait for the sequence to be linear and contiguous.</p>
+<hr />
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>we use the word <em>fact</em> here for two reasons.
+Firstly, the word &quot;event&quot; is already heavily overloaded (PDUs, EDUs, account data, ...) and we don't need to make that worse.
+Secondly, &quot;fact&quot; emphasises that the things we append to a stream cannot change after the fact.</p>
+</div>
+<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
+<p>A fact might be expressed with 0 rows, e.g. if we opened a transaction to persist an event, but failed and rolled the transaction back before marking the fact as completed.
+In principle a fact might be expressed with 2 or more rows; if so, each of those rows should share the fact's stream ID.</p>
+</div>
+<div class="footnote-definition" id="3"><sup class="footnote-definition-label">3</sup>
+<p>This communication used to happen directly with the writers <a href="development/synapse_architecture/../../tcp_replication.html">over TCP</a>;
+nowadays it's done via Redis's Pubsub.</p>
+</div>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="tcp-replication"><a class="header" href="#tcp-replication">TCP Replication</a></h1>
 <h2 id="motivation-1"><a class="header" href="#motivation-1">Motivation</a></h2>
 <p>Previously the workers used an HTTP long poll mechanism to get updates
@@ -17860,7 +18715,7 @@ noted when manually using the protocol:</p>
 been disabled on the main process.</li>
 <li>The server will only time connections out that have sent a <code>PING</code>
 command. If a ping is sent then the connection will be closed if no
-further commands are receieved within 15s. Both the client and
+further commands are received within 15s. Both the client and
 server protocol implementations will send an initial PING on
 connection and ensure at least one command every 5s is sent (not
 necessarily <code>PING</code>).</li>
@@ -17931,7 +18786,7 @@ received for each stream so that on reconnection it can start streaming
 from the correct place. Note: not all RDATA have valid tokens due to
 batching. See <code>RdataCommand</code> for more details.</p>
 <h3 id="example-5"><a class="header" href="#example-5">Example</a></h3>
-<p>An example iteraction is shown below. Each line is prefixed with '&gt;'
+<p>An example interaction is shown below. Each line is prefixed with '&gt;'
 or '&lt;' to indicate which side is sending, these are <em>not</em> included on
 the wire:</p>
 <pre><code>* connection established *
@@ -18259,7 +19114,7 @@ But don't want to send out sensitive data in other HS's events in this way.</p>
 <p>Suppose we discover after resync that we shouldn't have sent out one our events (not a prev_event) to a target HS. Not much we can do.
 What about if we didn't send them an event but shouldn't've?
 E.g. what if someone joined from a new HS shortly after you did? We wouldn't talk to them.
-Could imagine sending out the &quot;Missed&quot; events after the resync but... painful to work out what they shuld have seen if they joined/left.
+Could imagine sending out the &quot;Missed&quot; events after the resync but... painful to work out what they should have seen if they joined/left.
 Instead, just send them the latest event (if they're still in the room after resync) and let them backfill.(?)</p>
 <ul>
 <li>Don't do this currently.</li>
@@ -18774,7 +19629,7 @@ the minimum required version may be bumped up to a recent Rust version, and so
 people building from source should ensure they can fetch recent versions of Rust
 (e.g. by using <a href="https://rustup.rs/">rustup</a>).</p>
 <p>The oldest supported version of SQLite is the version
-<a href="https://packages.debian.org/buster/libsqlite3-0">provided</a> by
+<a href="https://packages.debian.org/bullseye/libsqlite3-0">provided</a> by
 <a href="https://wiki.debian.org/DebianOldStable">Debian oldstable</a>.</p>
 <h2 id="context"><a class="header" href="#context">Context</a></h2>
 <p>It is important for system admins to have a clear understanding of the platform
@@ -18879,6 +19734,8 @@ admin@homeserver:~$ sudo --user postgres psql matrix-synapse --command 'select c
 
         <!-- Custom JS scripts -->
         <script type="text/javascript" src="docs/website_files/table-of-contents.js"></script>
+        <script type="text/javascript" src="docs/website_files/version-picker.js"></script>
+        <script type="text/javascript" src="docs/website_files/version.js"></script>
         <script type="text/javascript">
         window.addEventListener('load', function() {
             window.setTimeout(window.print, 100);
